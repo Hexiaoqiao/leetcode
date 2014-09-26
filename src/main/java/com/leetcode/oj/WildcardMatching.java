@@ -1,0 +1,77 @@
+package com.leetcode.oj;
+
+public class WildcardMatching {
+    public static boolean isMatch_DP(String s, String p) {
+    	if (null == p && null == s) return true;
+    	if (null == s || 0 == s.length() 
+    			|| null == p || 0 == p.length()) return false;
+    	int slen = s.length();
+    	int plen = p.length();
+    	boolean[][] dp = new boolean[slen + 1][plen + 1];
+    	dp[0][0] = true;
+    	for (int i = 1; i <= plen; i++) {
+    		if (dp[0][i - 1] && '*' == p.charAt(i - 1)) dp[0][i] = true;
+    		for (int j = 1; j <= slen; j++) {
+    			if ('?' == p.charAt(i - 1)) {dp[j][i] = dp[j - 1][i - 1];}
+    			else if ('*' == p.charAt(i - 1)) {dp[j][i] = dp[j][i - 1] || dp[j - 1][i];}
+    			else if (s.charAt(j - 1) == p.charAt(i - 1)) {dp[j][i] = dp[j - 1][i - 1];}
+    			else dp[j][i] = false;
+    		}
+    	}
+    	return dp[slen][plen];
+    }
+    
+    public static boolean isMatch_Greedy(String s, String p) {
+    	if ((null == p && null == s) || (0 == p.length() && 0 == s.length())) return true;
+    	if (null == s || null == p) return false;
+    	int slen = s.length();
+    	int plen = p.length();
+    	int sstar = -1;
+    	int pstar = -1;
+    	int i = 0;
+    	int j = 0;
+    	while (i < slen) {
+    		if (-1 == i || -1 == j) return false; 
+    		char sc = s.charAt(i);
+    		char pc = 0;
+    		if (j < plen) pc = p.charAt(j);
+    		if ('?' == pc || sc == pc) {
+    			i++;j++;
+    		} else if ('*' == pc) {
+    			while (j < plen && '*' == p.charAt(j)) j++;
+    			if (j == plen) return true;
+    			sstar = i;
+    			pstar = j;
+    		} else if ((j == plen || sc != pc) && (pstar < plen)) {
+    			sstar = sstar + 1;
+    			i = sstar;
+    			j = pstar;
+    		} else {
+    			return false;
+    		}
+    	}
+    	if (i == slen && j == plen) return true;
+    	else if (i == slen)
+    		while (j < plen) {
+    			if ('*' != p.charAt(j)) return false;
+    			j++;
+    		}
+    	else if (i != slen) return false;
+    	return true;
+    }
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[][] test = {{"hi", "*?"},{"aa","a"},{"aa","aa"},{"aaa","aa"},{"aa", "*"},{"aa", "a*"},{"ab", "?*"},{"aab", "c*a*b"},{"a", "a*"}, {"", "*"}};
+		for (int i = 0; i < test.length; i++) {
+			System.out.println(isMatch_DP(test[i][0], test[i][1]));
+		}
+		System.out.println();
+		for (int i = 0; i < test.length; i++) {
+			System.out.println(isMatch_Greedy(test[i][0], test[i][1]));
+		}
+	}
+
+}

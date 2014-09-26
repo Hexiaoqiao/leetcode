@@ -1,0 +1,88 @@
+package com.leetcode.oj;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+public class MaxPointsOfLine {
+	static class Point {
+		int x;
+		int y;
+
+		Point() {
+			x = 0;
+			y = 0;
+		}
+
+		Point(int a, int b) {
+			x = a;
+			y = b;
+		}
+	}
+	
+    public static int maxPoints(Point[] points) {
+    	List<Point> xp = new ArrayList<Point>();
+    	for (Point point : points) {
+    		xp.add(point);
+    	}
+    	Collections.sort(xp, new Comparator<Point>() {
+			@Override
+			public int compare(Point a, Point b) {
+				// TODO Auto-generated method stub
+				if (a.x == b.x) return a.y - b.y; 
+				return a.x - b.x;
+			}
+		});
+
+    	int max = 0;
+    	int xplen = xp.size();
+    	for (int i = 0; i < xplen - max; i++) {
+    		int repeat = 0;
+    		List<Double> ratios = new ArrayList<Double>();
+    		for (int j = i + 1; j < xplen; j++) {
+    			if (xp.get(j).x == xp.get(i).x && xp.get(j).y == xp.get(i).y) {repeat = repeat + 1;}
+    			else if (xp.get(j).x == xp.get(i).x) ratios.add(Double.MAX_VALUE);
+    			else ratios.add(new Double(1.0 * (xp.get(j).y - xp.get(i).y) / (xp.get(j).x - xp.get(i).x)));
+    		}
+    		Collections.sort(ratios, new Comparator<Double>() {
+    			@Override
+    			public int compare(Double a, Double b) {
+    				return Double.compare(a, b);
+    			}
+			});
+    		int xmax = 0;
+    		if (ratios.size() < 2) {
+    			xmax = ratios.size() + repeat + 1;
+    		} else {
+    			int lindex = 0;
+	    		for (int k = 1; k < ratios.size(); k++) {
+	    			int cmp = Double.compare(ratios.get(k), ratios.get(k - 1));
+	    			int size = ratios.size();
+	    			if (cmp != 0 || k == size - 1) {
+	    				int inc = repeat;
+	    				if (k == size - 1 && cmp == 0) {
+	    					inc = inc + 2;
+	    				} else {
+	    					inc = inc + 1;
+	    				}
+	    				if (xmax < k - lindex + inc) xmax = k - lindex + inc;
+	    				lindex = k;
+	    			}
+	    		}
+    		}
+    		if (xmax > max) max = xmax;
+    	}
+        return max;
+    }
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//new Point(1,2), new Point(0,0), new Point(1,2), new Point(1,2), new Point(1,5)
+		Point[] points = {new Point(0,0), new Point(0,0), new Point(0,0), new Point(0,0), new Point(0,0)};
+		System.out.println(maxPoints(points));
+	}
+
+}

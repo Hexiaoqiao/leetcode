@@ -1,3 +1,49 @@
+/*
+0.Problem:
+0.0
+Given a sorted linked list, delete all duplicates such that 
+each element appear only once.
+For example,
+Given 1->1->2, return 1->2.
+Given 1->1->2->3->3, return 1->2->3.
+
+0.1
+Given a sorted linked list, delete all nodes that have duplicate 
+numbers, leaving only distinct numbers from the original list.
+For example,
+Given 1->2->3->3->4->4->5, return 1->2->5.
+Given 1->1->1->2->3, return 2->3.
+
+0.2
+Given a sorted array, remove the duplicates in place such that 
+each element appear only once and return the new length.
+Do not allocate extra space for another array, you must do this 
+in place with constant memory.
+For example,
+Given input array A = [1,1,2],
+Your function should return length = 2, and A is now [1,2].
+
+0.3
+Follow up for "Remove Duplicates":
+What if duplicates are allowed at most twice?
+For example,
+Given sorted array A = [1,1,1,2,2,3],
+Your function should return length = 5, and A is now [1,1,2,2,3].
+
+0.4
+Given an array and a value, remove all instances of that value in 
+place and return the new length.
+The order of elements can be changed. It doesn't matter what you 
+leave beyond the new length.
+(注：将值为value的元素移到数组尾部，返回（删除value后）结果数组长度)
+
+1.Refer.:
+1.0 顺序遍历跳过重复元素生成结果链表
+1.1 两个指针分别指向重复元素的起至位置，一次全部删除
+1.2 通过累计重复元素个数确认当前不重复元素新位置
+1.3 同1.2，区别在于保留重复个数从1到2
+1.4 ugly：顺序遍历数组，若遇到elem则与数组尾部第一个非elem元素交换 grace:双指针
+*/
 package com.leetcode.oj;
 
 public class RemoveDuplicatesSortedList {

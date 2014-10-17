@@ -1,5 +1,15 @@
-package com.leetcode.oj;
+/*
+0.Problem:
+Given a singly linked list L: L0→L1→…→Ln-1→Ln,
+reorder it to: L0→Ln→L1→Ln-1→L2→Ln-2→…
+You must do this in-place without altering the nodes' values.
+For example,
+Given {1,2,3,4}, reorder it to {1,4,2,3}.
 
+1.Refer.:
+1.0 将链表从中间分成两边，后边链表逆序，然后将二者合并即可
+*/
+package com.leetcode.oj;
 
 public class ReorderList {
 	public static class ListNode {

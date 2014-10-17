@@ -1,3 +1,17 @@
+/*
+0.Problem:
+There are N children standing in a line. Each child is assigned a rating value.
+
+You are giving candies to these children subjected to the following requirements:
+
+Each child must have at least one candy.
+Children with a higher rating get more candies than their neighbors.
+What is the minimum candies you must give?
+
+1.Refer.:逐个分配
+1.0 从前到后：若rating增则candy逐个加1，否则置1；
+1.1 从后往前：若rating增则candy数为后边数+1；
+*/
 package com.leetcode.oj;
 
 public class Candy {

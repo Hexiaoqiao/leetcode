@@ -1,3 +1,17 @@
+/*
+0.Problem:
+0.0
+Given a roman numeral, convert it to an integer.
+Input is guaranteed to be within the range from 1 to 3999.
+0.1
+Given an integer, convert it to a roman numeral.
+Input is guaranteed to be within the range from 1 to 3999.
+
+1.Refer.:
+1.0 Roman字符和Int对应关系；
+1.1 按照Roman numeral的构造规则转换；
+
+*/
 package com.leetcode.oj;
 
 import java.util.HashMap;
@@ -48,6 +62,7 @@ public class Integer4Roman {
 		}
 		return roman;
 	}
+	
     public static int romanToInt(String s) {
 		Character[] metric = {'I','V','X','L','C','D','M'};
 		int[] a = {1,5,10,50,100,500,1000};

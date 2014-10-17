@@ -1,3 +1,11 @@
+/*
+0.Problem:
+Write a function to find the longest common prefix string 
+amongst an array of strings.
+
+1.Refer.:
+1.0 遍历所有字符串从字符串头开始查共同的前缀
+*/
 package com.leetcode.oj;
 
 public class LongestCommonPrefix {

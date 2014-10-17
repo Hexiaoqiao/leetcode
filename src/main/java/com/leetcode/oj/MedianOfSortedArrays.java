@@ -1,3 +1,17 @@
+/*
+0.Problem:
+There are two sorted arrays A and B of size m and n respectively. 
+Find the median of the two sorted arrays. 
+The overall run time complexity should be O(log (m+n)).
+
+1.Refer.: 找两个数组的中位数
+1.0 设数组为A[m],B[n] 找两者之间的第k位，则：
+	第k位一定在A[k/2]和B[k-k/2]之后；
+1.1 比较A[k/2]和B[k-k/2]大小，
+	如果A[k/2]>B[k-k/2]则在A[0..m]和B[k-k/2..n]之间找第k-k/2位；
+	如果A[k/2]<=B[k-k/2]则在A[k/2,m]和B[0..n]之间找第k-k/2位；
+1.2 判断m+n的奇偶后求中位
+*/
 package com.leetcode.oj;
 
 public class MedianOfSortedArrays {
@@ -35,7 +49,8 @@ public class MedianOfSortedArrays {
     	int blen = B.length;
     	int len = alen + blen;
     	if (0 == len % 2) {
-    		return 0.5 * (findNthSortedArrays(A, B, len / 2) + findNthSortedArrays(A, B, len / 2 + 1));
+			return 0.5 * (findNthSortedArrays(A, B, len / 2) 
+					+ findNthSortedArrays(A, B, len / 2 + 1));
     	} else {
     		return findNthSortedArrays(A, B, len / 2 + 1);
     	}

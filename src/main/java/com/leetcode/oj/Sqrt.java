@@ -1,3 +1,11 @@
+/*
+0.Problem:
+Implement int sqrt(int x).
+Compute and return the square root of x.
+
+1.Refer.:
+1.0 遍历结果的每一位是否为1；通过相乘判断；抑或
+*/
 package com.leetcode.oj;
 
 public class Sqrt {

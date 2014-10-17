@@ -1,3 +1,36 @@
+/*
+0.Problem:
+Clone an undirected graph. Each node in the graph contains a label and 
+a list of its neighbors.
+
+OJ's undirected graph serialization:
+Nodes are labeled uniquely.
+
+We use # as a separator for each node, and , as a separator for node 
+label and each neighbor of the node.
+As an example, consider the serialized graph {0,1,2#1,2#2,2}.
+
+The graph has a total of three nodes, and therefore contains three parts 
+as separated by #.
+
+First node is labeled as 0. Connect node 0 to both nodes 1 and 2.
+Second node is labeled as 1. Connect node 1 to node 2.
+Third node is labeled as 2. Connect node 2 to node 2 (itself), thus 
+forming a self-cycle.
+Visually, the graph looks like the following:
+
+       1
+      / \
+     /   \
+    0 --- 2
+         / \
+         \_/
+         
+1.Refer.:
+1.0 图遍历：为每个当前节点增加一个邻居节点是当前节点的副本；
+1.1 按照原图关系链接副本节点之间的链接；
+1.2 删除原图和副本之间的邻居关系；
+*/
 package com.leetcode.oj;
 
 import java.util.ArrayList;
@@ -78,7 +111,7 @@ public class CloneGraph {
 		UndirectedGraphNode e = new UndirectedGraphNode(4);
 		UndirectedGraphNode f = new UndirectedGraphNode(5);
 		
-/*		a.neighbors.add(b);
+		a.neighbors.add(b);
 		a.neighbors.add(c);
 		a.neighbors.add(d);
 		b.neighbors.add(c);
@@ -87,7 +120,7 @@ public class CloneGraph {
 		c.neighbors.add(e);
 		c.neighbors.add(f);
 		d.neighbors.add(f);
-		e.neighbors.add(f);*/
+		e.neighbors.add(f);
 		
 		print(a);
 		UndirectedGraphNode r = cloneGraph(null);

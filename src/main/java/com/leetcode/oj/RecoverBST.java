@@ -1,3 +1,17 @@
+/*
+0.Problem:
+Two elements of a binary search tree (BST) are swapped by mistake.
+Recover the tree without changing its structure.
+Note:
+A solution using O(n) space is pretty straight forward. Could you 
+devise a constant space solution?
+confused what "{1,#,2,3}" means? 
+
+1.Refer.:
+1.0 中序遍历二叉树；
+1.1 找到遍历的结果中不符合大小顺序的两个Node
+1.2 交换1.1中的两个Node
+*/
 package com.leetcode.oj;
 
 import java.util.ArrayList;
@@ -16,9 +30,6 @@ public class RecoverBST {
 	
     public static void recoverTree(TreeNode root) {
         List<TreeNode> nodes = new ArrayList<TreeNode>();
-        /*Map<TreeNode, TreeNode> parent = new HashMap<TreeNode, TreeNode>();
-        if (null != root) parent.put(root, null);
-        traversal(root, nodes, parent);*/
         traversal(root, nodes);
         for (TreeNode tn : nodes) {System.out.print(tn.val + " ");}
         int i = 0;
@@ -45,27 +56,13 @@ public class RecoverBST {
         traversal(root, nodes);
         System.out.println();
         for (TreeNode tn : nodes) {System.out.print(tn.val + " ");}
-        /*TreeNode left = r1.left;
-        TreeNode right = r1.right;
-        r1.left = r2.left;
-        r1.right = r2.right;
-        r2.left = left;
-        r2.right = right;
-        TreeNode p1 = parent.get(r1);
-        TreeNode p2 = parent.get(r2);*/
-        
-/*      for (TreeNode tn : nodes) {System.out.println(tn.val);}
-        Set<TreeNode> keys = parent.keySet();
-        for (TreeNode k : keys) System.out.println(k.val + ":" + ((null == parent.get(k)) ? "" : parent.get(k).val));*/
     }
     
-    public static void traversal(TreeNode root, List<TreeNode> nodes/*, Map<TreeNode, TreeNode> parent*/) {
+    public static void traversal(TreeNode root, List<TreeNode> nodes) {
     	if (null == root) return;
-    	traversal(root.left, nodes/*, parent*/);
-    	//if (null != root.left) parent.put(root.left, root);
+    	traversal(root.left, nodes);
     	nodes.add(root);
-    	traversal(root.right, nodes/*, parent*/);
-    	//if (null != root.right) parent.put(root.right, root);
+    	traversal(root.right, nodes);
     }
 	/**
 	 * @param args

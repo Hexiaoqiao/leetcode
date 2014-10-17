@@ -1,3 +1,49 @@
+/*
+0.Problem:
+0.0
+Given a set of distinct integers, S, return all possible subsets.
+Note:
+Elements in a subset must be in non-descending order.
+The solution set must not contain duplicate subsets.
+For example,
+If S = [1,2,3], a solution is:
+
+[
+  [3],
+  [1],
+  [2],
+  [1,2,3],
+  [1,3],
+  [2,3],
+  [1,2],
+  []
+]
+
+0.1
+Given a collection of integers that might contain duplicates, S, 
+return all possible subsets.
+Note:
+Elements in a subset must be in non-descending order.
+The solution set must not contain duplicate subsets.
+For example,
+If S = [1,2,2], a solution is:
+[
+  [2],
+  [1],
+  [1,2,2],
+  [2,2],
+  [1,2],
+  []
+]
+
+1.Refer.:
+1.0
+二叉树遍历
+
+1.1
+二叉树遍历
+通过num[i] == num[i - 1]记录last=res.size避免重复元素加入
+*/
 package com.leetcode.oj;
 
 import java.util.ArrayList;

@@ -1,3 +1,28 @@
+/*
+0.Problem:
+Implement regular expression matching with support for '.' and '*'.
+'.' Matches any single character.
+'*' Matches zero or more of the preceding element.
+The matching should cover the entire input string (not partial).
+The function prototype should be:
+bool isMatch(const char *s, const char *p)
+Some examples:
+isMatch("aa","a") → false
+isMatch("aa","aa") → true
+isMatch("aaa","aa") → false
+isMatch("aa", "a*") → true
+isMatch("aa", ".*") → true
+isMatch("ab", ".*") → true
+isMatch("aab", "c*a*b") → true
+
+1.Refer.:递归
+1.0 普通字符或.正常匹配；
+1.1 遇到*时递归两种情况
+isMatch(s, i, p, j + 2) return true;
+或
+for (i++ && s[i]=p[j]) isMatch(s, i + 1, p, j + 2) return true; 
+
+*/
 package com.leetcode.oj;
 
 public class RegularExpressionMatching {
@@ -46,7 +71,9 @@ public class RegularExpressionMatching {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String[][] test = {{"a", "ab*"},{"a","."},{"aa","a"},{"aa","aa"},{"aaa","aa"},{"aa", "a*"},{"aab", "dc*a*b"},{"a", "a*"}};
+		String[][] test = { { "a", "ab*" }, { "a", "." }, { "aa", "a" },
+				{ "aa", "aa" }, { "aaa", "aa" }, { "aa", "a*" },
+				{ "aab", "dc*a*b" }, { "a", "a*" } };
 		//String[][] test = {{"ab",".*c"}, {"a", ".*..a*"},{"abcd", "d*"}};
 		for (int i = 0; i < test.length; i++) {
 			System.out.println(isMatch(test[i][0], test[i][1]));

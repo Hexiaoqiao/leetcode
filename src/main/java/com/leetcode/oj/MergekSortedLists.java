@@ -1,3 +1,12 @@
+/*
+0.Problem:
+Merge k sorted linked lists and return it as one sorted list. 
+Analyze and describe its complexity.
+
+1.Refer.:优先级队列
+将所有链表的头节点加入优先级队列，poll出队列的第一个元素，
+将该元素的next加入队列，直到队列为空
+*/
 package com.leetcode.oj;
 
 import java.util.ArrayList;

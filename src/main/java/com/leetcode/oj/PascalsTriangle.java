@@ -1,3 +1,28 @@
+/*
+0.Problem:
+0.0
+Given numRows, generate the first numRows of Pascal's triangle.
+For example, given numRows = 5,
+Return
+[
+     [1],
+    [1,1],
+   [1,2,1],
+  [1,3,3,1],
+ [1,4,6,4,1]
+]
+
+0.1
+Given an index k, return the kth row of the Pascal's triangle.
+For example, given k = 3,
+Return [1,3,3,1].
+Note:
+Could you optimize your algorithm to use only O(k) extra space?
+
+1.Refer.:
+1.0 顺序生成就好；
+1.1 DP res[j] = rres.get(j) + res.get(j - 1)
+*/
 package com.leetcode.oj;
 
 import java.util.ArrayList;
@@ -6,7 +31,6 @@ import java.util.List;
 public class PascalsTriangle {
     public static List<List<Integer>> generate(int numRows) {
     	List<List<Integer>> res = new ArrayList<List<Integer>>();
-        //if (0 == numRows) return null;
         for (int i = 0; i < numRows; i++) {
         	List<Integer> l = new ArrayList<Integer>();
         	for (int j = 0; j < i + 1; j++) {

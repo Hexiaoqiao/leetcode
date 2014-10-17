@@ -1,3 +1,12 @@
+/*
+0.Problem:
+Merge two sorted linked lists and return it as a new list. 
+The new list should be made by splicing together the nodes 
+of the first two lists.
+
+1.Refer.:
+两个链表顺序遍历进行合并
+*/
 package com.leetcode.oj;
 
 public class MergeTwoSortedLists {

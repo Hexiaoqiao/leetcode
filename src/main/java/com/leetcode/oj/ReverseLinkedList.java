@@ -1,3 +1,16 @@
+/*
+0.Problem:
+Reverse a linked list from position m to n. Do it in-place and in one-pass.
+For example:
+Given 1->2->3->4->5->NULL, m = 2 and n = 4,
+return 1->4->3->2->5->NULL.
+Note:
+Given m, n satisfy the following condition:
+1 ≤ m ≤ n ≤ length of list.
+
+1.Refer.:
+1.0 同ReverseNodesInkGroup，区别在于先找到区间，然后仅需要reverse一次，
+*/
 package com.leetcode.oj;
 
 public class ReverseLinkedList {

@@ -1,3 +1,14 @@
+/*
+0.Problem:
+Given a string S, find the longest palindromic substring in S. 
+You may assume that the maximum length of S is 1000, and there 
+exists one unique longest palindromic substring.
+
+1.Refer.:
+1.0 从头开始循环测试：符合palindromic的子字符串包含两种情况：以当前字符为
+中心字符和从当前字符开始就对称；所以调用longestPalindromeByMid(s,i,j)时
+i=j或i+1=j
+*/
 package com.leetcode.oj;
 
 public class LongestPalindromicSubstring {

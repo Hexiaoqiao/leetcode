@@ -1,3 +1,23 @@
+/*
+0.Problem:
+Given an input string, reverse the string word by word.
+For example,
+Given s = "the sky is blue",
+return "blue is sky the".
+
+Clarification:
+What constitutes a word?
+A sequence of non-space characters constitutes a word.
+Could the input string contain leading or trailing spaces?
+Yes. However, your reversed string should not contain leading 
+or trailing spaces.
+How about multiple spaces between two words?
+Reduce them to a single space in the reversed string.
+
+1.Refer.:
+1.0 分词
+1.1 倒序组合
+*/
 package com.leetcode.oj;
 
 import java.util.ArrayList;
@@ -15,9 +35,11 @@ public class ReverseWords {
 				if (end != begin) {
 					word = s.substring(begin, end);
 					words.add(word);
-					begin = end = end + 1;
+					end = end + 1;
+					begin = end;
 				} else {
-					begin = end = i + 1;
+					end = i + 1;
+					begin = end;
 				}
 			} else {
 				end = i + 1;

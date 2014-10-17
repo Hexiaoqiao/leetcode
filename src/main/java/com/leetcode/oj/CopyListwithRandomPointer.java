@@ -1,3 +1,15 @@
+/*
+0.Problem:
+A linked list is given such that each node contains an additional 
+random pointer which could point to any node in the list or null.
+
+Return a deep copy of the list.
+
+1.Refer.:
+1.0 从头沿next链copy节点并附到当前节点的next；
+1.1 从头沿next链根据原节点的random链接副本节点之间的链接关系；
+1.2 副本节点从主节点脱离得到副本链表；
+*/
 package com.leetcode.oj;
 
 import java.util.ArrayList;

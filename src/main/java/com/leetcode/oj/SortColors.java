@@ -1,3 +1,22 @@
+/*
+0.Problem:
+Given an array with n objects colored red, white or blue, 
+sort them so that objects of the same color are adjacent, 
+with the colors in the order red, white and blue.
+Here, we will use the integers 0, 1, and 2 to represent 
+the color red, white, and blue respectively.
+Note:
+You are not suppose to use the library's sort function for 
+this problem.
+
+1.Refer.:
+1.0 从两边向中间遍历：
+1.1 左边从当前位置向右到第一个非零位置i；
+1.2 右边从当前位置向左到第一个非2位置j；
+1.3 A[i]=2 && A[j]=0直接交换；继续1.1；
+1.4 A[i]=2 && A[j]!=0则A[j]=2，A[i]=1;继续1.1；
+1.5 A[i]!=2 && A[j]=0则A[i]=0,A[j]=1;继续1.1；
+*/
 package com.leetcode.oj;
 
 public class SortColors {
@@ -36,9 +55,6 @@ public class SortColors {
         		i++;
         	}
         }
-/*        for (i = zindex; i <= tindex; i++) {
-        	A[i] = 1;
-        }*/
     }
 	/**
 	 * @param args

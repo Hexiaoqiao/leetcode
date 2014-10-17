@@ -1,3 +1,38 @@
+/*
+0.Problem:
+0.0
+Given a matrix of m x n elements (m rows, n columns), return all 
+elements of the matrix in spiral order.
+For example,
+Given the following matrix:
+[
+ [ 1, 2, 3 ],
+ [ 4, 5, 6 ],
+ [ 7, 8, 9 ]
+]
+You should return [1,2,3,6,9,8,7,4,5].
+
+0.1
+Given an integer n, generate a square matrix filled with elements 
+from 1 to n2 in spiral order.
+For example,
+Given n = 3,
+You should return the following matrix:
+[
+ [ 1, 2, 3 ],
+ [ 8, 9, 4 ],
+ [ 7, 6, 5 ]
+]
+
+1.Refer.:
+1.0
+0.设置遍历范围；
+1.顺时针遍历四个方向；
+2.重复step0&1直到所有元素遍历；
+
+1.1
+同1.0
+*/
 package com.leetcode.oj;
 
 import java.util.ArrayList;

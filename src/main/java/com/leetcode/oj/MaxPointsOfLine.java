@@ -1,3 +1,14 @@
+/*
+0.Problem:
+Given n points on a 2D plane, find the maximum number of 
+points that lie on the same straight line.
+
+1.Refer.:
+1.0 按照point映射到横坐标上的升序对point进行排序（若相等纵坐标升序排）；
+1.1 顺序遍历point：
+	计算当前point与其后point之间的斜率，记录相同斜率point的最大数目；
+1.2 返回最大值；
+*/
 package com.leetcode.oj;
 
 import java.util.ArrayList;
@@ -80,8 +91,8 @@ public class MaxPointsOfLine {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//new Point(1,2), new Point(0,0), new Point(1,2), new Point(1,2), new Point(1,5)
-		Point[] points = {new Point(0,0), new Point(0,0), new Point(0,0), new Point(0,0), new Point(0,0)};
+		Point[] points = { new Point(0, 0), new Point(0, 0), new Point(0, 0),
+				new Point(0, 0), new Point(0, 0) };
 		System.out.println(maxPoints(points));
 	}
 

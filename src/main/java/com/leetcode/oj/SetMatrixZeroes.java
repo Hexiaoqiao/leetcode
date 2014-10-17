@@ -1,3 +1,19 @@
+/*
+0.Problem:
+Given a m x n matrix, if an element is 0, set its entire 
+row and column to 0. Do it in place.
+Follow up:
+Did you use extra space?
+A straight forward solution using O(mn) space is probably a bad idea.
+A simple improvement uses O(m + n) space, but still not the best solution.
+Could you devise a constant space solution?
+
+1.Refer.:
+1.0 判断首行首列的零值情况；
+1.1 将矩阵的零值均映射到首行首列；
+1.2 行置位；
+1.3 列置位；
+*/
 package com.leetcode.oj;
 
 public class SetMatrixZeroes {

@@ -1,3 +1,25 @@
+/*
+0.Problem:
+Implement wildcard pattern matching with support for '?' and '*'.
+'?' Matches any single character.
+'*' Matches any sequence of characters (including the empty sequence).
+The matching should cover the entire input string (not partial).
+The function prototype should be:
+bool isMatch(const char *s, const char *p)
+Some examples:
+isMatch("aa","a") → false
+isMatch("aa","aa") → true
+isMatch("aaa","aa") → false
+isMatch("aa", "*") → true
+isMatch("aa", "a*") → true
+isMatch("ab", "?*") → true
+isMatch("aab", "c*a*b") → false
+
+1.Refer.: Greedy
+从字符串s & p头部开始每次都选择当前的局部最优策略，当出现不匹配时回退到上次'*'
+下一位继续搜索
+
+*/
 package com.leetcode.oj;
 
 public class WildcardMatching {
@@ -64,7 +86,9 @@ public class WildcardMatching {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String[][] test = {{"hi", "*?"},{"aa","a"},{"aa","aa"},{"aaa","aa"},{"aa", "*"},{"aa", "a*"},{"ab", "?*"},{"aab", "c*a*b"},{"a", "a*"}, {"", "*"}};
+		String[][] test = { { "hi", "*?" }, { "aa", "a" }, { "aa", "aa" },
+				{ "aaa", "aa" }, { "aa", "*" }, { "aa", "a*" }, { "ab", "?*" },
+				{ "aab", "c*a*b" }, { "a", "a*" }, { "", "*" } };
 		for (int i = 0; i < test.length; i++) {
 			System.out.println(isMatch_DP(test[i][0], test[i][1]));
 		}

@@ -1,3 +1,13 @@
+/*
+0.Problem:
+Sort a linked list in O(n log n) time using constant space complexity.
+
+1.Refer.: 递归
+1.0 第一个元素作为结果的中间元素mid；比mid小的元素作为一个链表，
+比mid大的元素作为另一个链表
+1.1 递归大小两个链表；
+1.2 结果组合；
+*/
 package com.leetcode.oj;
 
 public class SortList {

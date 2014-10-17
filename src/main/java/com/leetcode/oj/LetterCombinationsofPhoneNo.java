@@ -1,3 +1,21 @@
+/*
+0.Problem:
+Given a digit string, return all possible letter combinations 
+that the number could represent.
+A mapping of digit to letters (just like on the telephone 
+buttons) is given below.
+
+Input:Digit string "23"
+Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
+Note:
+Although the above answer is in lexicographical order, your answer 
+could be in any order you want.
+
+1.Refer.:
+1.0 生成数字和字符对应关系表；
+1.1 根据输入数据query到对应的字符串列表；
+1.2 树遍历；保存结果
+*/
 package com.leetcode.oj;
 
 import java.util.ArrayList;

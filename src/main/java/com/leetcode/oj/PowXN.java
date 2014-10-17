@@ -1,3 +1,9 @@
+/*
+0.Problem:
+Implement pow(x, n).
+
+1.Refer.：refer代码
+*/
 package com.leetcode.oj;
 
 public class PowXN {

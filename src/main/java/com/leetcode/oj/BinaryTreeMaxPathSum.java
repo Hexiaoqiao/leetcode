@@ -1,3 +1,25 @@
+/*
+0.Problem:
+Given a binary tree, find the maximum path sum.
+
+The path may start and end at any node in the tree.
+
+For example:
+Given the below binary tree,
+
+       1
+      / \
+     2   3
+Return 6.
+
+1.Refer.:递归
+1.0.递归计算左子树maxPathSum:leftmax,rightmax
+1.1.步骤1.0分别返回左右子树到达其根的maxPathSum:childmax
+1.2.比较root.val,root.val+leftmax,root.val+rightmax,root.val+leftmax+rightmax
+为经过root的maxPathSum
+1.3.上述计算过程中产生的所有路径最大值即为结果
+
+*/
 package com.leetcode.oj;
 
 import java.util.ArrayList;
@@ -13,40 +35,8 @@ public class BinaryTreeMaxPathSum {
 			val = x;
 		}
 	}
-	
+    
     public static int maxPathSum(TreeNode root) {
-    	if (null == root) return 0;
-    	int left = maxPathSum(root.left);
-    	int right = maxPathSum(root.right);
-    	int r = maxPathSumWithRoot(root);
-    	int max = left;
-    	max = max < right ? right : max;
-    	max = max < r ? r : max;
-    	return max;
-    }
-    
-    public static int maxPathSumWithRoot(TreeNode root) {
-    	if (null == root) return 0;
-    	int left = 0;
-    	int right = 0;
-    	int res = root.val;
-    	if (null != root.left) left = maxSinglePathSumWithRoot(root.left);
-    	if (null != root.right) right = maxSinglePathSumWithRoot(root.right);
-    	if (left > 0) res = res + left;
-    	if (right > 0) res = res + right; 
-    	return res;
-    }
-    
-    public static int maxSinglePathSumWithRoot(TreeNode root) {
-    	int left = 0;
-    	int right = 0;
-    	if (null != root.left) left = maxSinglePathSumWithRoot(root.left);
-    	if (null != root.right) right = maxSinglePathSumWithRoot(root.right);
-    	if (left > right) return root.val + left;
-    	else return root.val + right;
-    }
-    
-    public static int maxPathSum1(TreeNode root) {
     	if (null == root) return 0;
     	List<Integer> max = new ArrayList<Integer>();
     	maxSinglePathSum(root, max);
@@ -86,7 +76,7 @@ public class BinaryTreeMaxPathSum {
 		t2.right = t5;
 		t3.left = t1;
 		t3.right = t4;
-		System.out.println(maxPathSum1(t2));
+		System.out.println(maxPathSum(t2));
 	}
 
 }

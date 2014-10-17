@@ -1,3 +1,16 @@
+/*
+0.Problem:
+Given a list, rotate the list to the right by k places, 
+where k is non-negative.
+For example:
+Given 1->2->3->4->5->NULL and k = 2,
+return 4->5->1->2->3->NULL.
+
+1.Refer.:
+1.0 顺序遍历
+1.1 边界条件
+
+*/
 package com.leetcode.oj;
 
 public class RotateList {

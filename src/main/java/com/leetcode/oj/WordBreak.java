@@ -1,3 +1,31 @@
+/*
+0.Problem:
+0.0
+Given a string s and a dictionary of words dict, determine if 
+s can be segmented into a space-separated sequence of one or 
+more dictionary words.
+For example, given
+s = "leetcode",
+dict = ["leet", "code"].
+Return true because "leetcode" can be segmented as "leet code".
+
+0.1
+Given a string s and a dictionary of words dict, add spaces in 
+s to construct a sentence where each word is a valid dictionary 
+word.
+Return all such possible sentences.
+For example, given
+s = "catsanddog",
+dict = ["cat", "cats", "and", "sand", "dog"].
+A solution is ["cats and dog", "cat sand dog"].
+
+1.Refer.:
+1.0 DP
+res[i] = res[j + 1] && dict.contains(s.substring(i,j))
+
+1.1 DP
+同1.0同时每次都保存结果集合
+*/
 package com.leetcode.oj;
 
 import java.util.ArrayList;

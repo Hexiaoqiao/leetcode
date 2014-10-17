@@ -1,3 +1,13 @@
+/*
+0.Problem:
+Given an array of strings, return all groups of strings that are anagrams.
+
+Note: All inputs will be in lower-case.
+1.Refer.:
+1.0逐个字符串遍历；
+1.1将字符串按照字典序重排；
+1.2从HashMap中查，若存在即是结果的一个元素，否则存入HashMap；
+*/
 package com.leetcode.oj;
 
 import java.util.ArrayList;

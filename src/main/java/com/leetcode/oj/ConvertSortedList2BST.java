@@ -1,3 +1,10 @@
+/*
+0.Problem:
+Given a singly linked list where elements are sorted 
+in ascending order, convert it to a height balanced BST.
+
+1.Refer.:思路同ConvertSortedArray2BST，区别在于需要从头开始遍历到中间位置
+*/
 package com.leetcode.oj;
 
 public class ConvertSortedList2BST {

@@ -1,3 +1,15 @@
+/*
+0.Problem:
+Given a binary tree, determine if it is height-balanced.
+
+For this problem, a height-balanced binary tree is defined 
+as a binary tree in which the depth of the two subtrees of 
+every node never differ by more than 1.
+
+1.Refer.:
+1.0递归左右子树
+1.1左右子树高度差值小于2；
+*/
 package com.leetcode.oj;
 
 public class BalancedBinaryTree {

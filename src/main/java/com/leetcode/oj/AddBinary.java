@@ -1,3 +1,13 @@
+/*
+0.Problem:
+Given two binary strings, return their sum (also a binary string).
+For example,
+    a = "11"
+    b = "1"
+    Return "100".
+1.Refer.:
+1.0从后往前逐位、进位相加；
+*/
 package com.leetcode.oj;
 
 public class AddBinary {
@@ -33,7 +43,7 @@ public class AddBinary {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String a = "111";
-		String b = "110";
+		String b = "1110";
 		System.out.println(addBinary(a, b));
 	}
 

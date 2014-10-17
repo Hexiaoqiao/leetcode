@@ -1,3 +1,12 @@
+/*
+0.Problem:
+Given two numbers represented as strings, return multiplication 
+of the numbers as a string.
+Note: The numbers can be arbitrarily large and are non-negative.
+
+1.Refer.:
+同两个数相乘的规则逐位相乘对结果进行组合（错位）求和
+*/
 package com.leetcode.oj;
 
 import java.util.ArrayList;

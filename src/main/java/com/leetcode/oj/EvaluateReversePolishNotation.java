@@ -1,3 +1,18 @@
+/*
+0.Problem:
+Evaluate the value of an arithmetic expression in Reverse Polish Notation.
+(http://en.wikipedia.org/wiki/Reverse_Polish_notation)
+Valid operators are +, -, *, /. Each operand may be an integer or another 
+expression.
+
+Some examples:
+  ["2", "1", "+", "3", "*"] -> ((2 + 1) * 3) -> 9
+  ["4", "13", "5", "/", "+"] -> (4 + (13 / 5)) -> 6
+  
+1.Refer.: 栈
+操作数压栈，遇到操作码从栈中取出两个操作数计算结果入栈；
+如果遇到操作数不够或者其他情况异常；
+*/
 package com.leetcode.oj;
 
 import java.util.ArrayList;

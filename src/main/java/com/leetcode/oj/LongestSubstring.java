@@ -1,32 +1,22 @@
+/*
+0.Problem:
+Given a string, find the length of the longest substring without 
+repeating characters. For example, the longest substring without 
+repeating letters for "abcabcbb" is "abc", which the length is 3. 
+For "bbbbb" the longest substring is "b", with the length of 1.
+
+1.Refer.: DP
+first[i] = next[i]; first[i+1] > next[i]
+		 = first[i+1]; first[i+1] <= next[i]
+其中next[i]表示s.charat(i)字符下一个位置，通过hashmap记录；
+计算first[i]-i，其中i去[1..n]取最大值
+*/
 package com.leetcode.oj;
 
 public class LongestSubstring {
 	public static int max(int a, int b) {
 		return a > b ? a : b;
 	}
-/*	public static int lengthOfLongest(String s, int len) {
-		char[] bitset = new char[32];
-		int length = 0;
-		if (1 == len) return 1; 
-		for (int i = len - 1; i >= 0; i--) {
-			char c = s.charAt(i);
-    		int a = c >> 3;
-    		int b = c & 0x7;
-    		int bit = 1 << b;
-    		if ((bitset[a] & bit) != 0) {
-    			length = len - i - 1;
-    			break;
-    		} else {
-    			bitset[a] = (char) (bitset[a] | bit);
-    		}
-		}
-		return max(lengthOfLongest(s, len-1), length);
-	}
-    public static int lengthOfLongestSubstring(String s) {
-    	if (null == s ) return 0;
-    	if (s.length() < 2) return s.length();
-    	return lengthOfLongest(s, s.length());
-    }*/
 	
 	public static int lengthOfLongestSubstring(String s) {
 		int max = 0;

@@ -1,3 +1,26 @@
+/*
+0.Problem:
+Given an absolute path for a file (Unix-style), simplify it.
+
+For example,
+path = "/home/", => "/home"
+path = "/a/./b/../../c/", => "/c"
+click to show corner cases.
+
+Corner Cases:
+Did you consider the case where path = "/../"?
+In this case, you should return "/".
+Another corner case is the path might contain multiple 
+slashes '/' together, such as "/home//foo/".
+In this case, you should ignore redundant slashes and 
+return "/home/foo".
+
+1.Refer.:
+1.0 按照/分割path；
+1.1 将.和空白用特殊字符代替；
+1.2 其他按照规则处理..（过程中跳过特殊字符），然后将..用特殊字符代替；
+1.3 收集结果
+*/
 package com.leetcode.oj;
 
 public class SimplifyPath {

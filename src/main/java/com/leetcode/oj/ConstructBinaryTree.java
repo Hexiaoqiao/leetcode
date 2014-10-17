@@ -1,3 +1,24 @@
+/*
+0.Problem:
+Given inorder and postorder traversal of a tree, construct the binary tree.
+Given preorder and inorder traversal of a tree, construct the binary tree.
+
+Note:
+You may assume that duplicates do not exist in the tree.
+
+1.Refer.:
+inorder+postorder:
+0)postorder[size-1] = inorder[x]; -> root
+1)
+(inorder(0,x-1),postorder(0,x-1)) -> left
+(inorder(x+1,size),postorder(x,size-1)) -> right
+
+preorder+inorder:
+0)preorder[0] = inorder[x]; -> root
+1)
+(inorder(0,x-1),preorder(1,x+1)) -> left
+(inorder(x+1,size),preorder(x+2,size)) -> right
+*/
 package com.leetcode.oj;
 
 public class ConstructBinaryTree {

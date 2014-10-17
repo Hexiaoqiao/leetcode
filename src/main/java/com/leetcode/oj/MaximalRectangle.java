@@ -1,3 +1,12 @@
+/*
+0.Problem:
+Given a 2D binary matrix filled with 0's and 1's, find the largest 
+rectangle containing all ones and return its area.
+
+1.Refer.:
+1.0 逐行遍历：如果当前节点值为1，累计列上连续1的个数；
+1.1 参考：LargestRectangleinHistogram计算结果；
+*/
 package com.leetcode.oj;
 
 public class MaximalRectangle {

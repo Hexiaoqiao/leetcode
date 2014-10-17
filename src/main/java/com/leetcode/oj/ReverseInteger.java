@@ -1,3 +1,25 @@
+/*
+0.Problem:
+Reverse digits of an integer.
+Example1: x = 123, return 321
+Example2: x = -123, return -321
+
+Have you thought about this?
+Here are some good questions to ask before coding. 
+Bonus points for you if you have already thought through this!
+If the integer's last digit is 0, what should the output be? 
+ie, cases such as 10, 100.
+Did you notice that the reversed integer might overflow? 
+Assume the input is a 32-bit integer, then the reverse of 
+1000000003 overflows. How should you handle such cases?
+Throw an exception? Good, but what if throwing an exception is 
+not an option? You would then have to re-design the function 
+(ie, add an extra parameter).
+
+1.Refer.:
+1.0 符号判断；
+1.1 通过long存储中间结果，超出int范围结果返回0；
+*/
 package com.leetcode.oj;
 
 public class ReverseInteger {

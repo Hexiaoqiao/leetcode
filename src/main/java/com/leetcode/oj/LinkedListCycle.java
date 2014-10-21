@@ -1,21 +1,25 @@
-/*
-0.Problem:
-Given a linked list, determine if it has a cycle in it.
-Follow up:
-Can you solve it without using extra space?
-
-Given a linked list, return the node where the cycle begins. 
-If there is no cycle, return null.
-Follow up:
-Can you solve it without using extra space?
-
-1.Refer.:
-1.0 两个指针，其中一个每次走一步，另一个每次走两步，如果相遇则有cycle;
-1.1 设从头节点开始到环的开始点的长度为a,环的开始点到相遇点的长度为b，
-相遇点到环的开始点的长度为c，则：
-	2a+2b=a+2b+c => a = c
-从相遇点开始一个指针，头开始一个指针，两者相遇即为环开始点
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * Given a linked list, determine if it has a cycle in it.
+ * Follow up:
+ * Can you solve it without using extra space?
+ * 
+ * Given a linked list, return the node where the cycle begins. 
+ * If there is no cycle, return null.
+ * Follow up:
+ * Can you solve it without using extra space?
+ * 
+ * 1.Refer.:
+ * 1.0 两个指针，其中一个每次走一步，另一个每次走两步，如果相遇则有cycle;
+ * 1.1 设从头节点开始到环的开始点的长度为a,环的开始点到相遇点的长度为b，
+ * 相遇点到环的开始点的长度为c，则：
+ * 	2a+2b=a+2b+c => a = c
+ * 从相遇点开始一个指针，头开始一个指针，两者相遇即为环开始点
+ */
 package com.leetcode.oj;
 
 public class LinkedListCycle {

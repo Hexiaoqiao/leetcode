@@ -1,14 +1,18 @@
-/*
-0.Problem:
-Divide two integers without using multiplication, 
-division and mod operator.
-
-1.Refer.:
-1.0 判断结果正负；
-1.1 取除数和被除数的绝对值；
-1.2 除数逐位左移与被除数比较大小确定最高非零位；
-1.3 被除数减去1.2结果作为新的被除数重复1.2直到除数大于被除数；
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * Divide two integers without using multiplication, 
+ * division and mod operator.
+ * 
+ * 1.Refer.:
+ * 1.0 判断结果正负；
+ * 1.1 取除数和被除数的绝对值；
+ * 1.2 除数逐位左移与被除数比较大小确定最高非零位；
+ * 1.3 被除数减去1.2结果作为新的被除数重复1.2直到除数大于被除数；
+ */
 package com.leetcode.oj;
 
 public class DivideTwoIntegers {

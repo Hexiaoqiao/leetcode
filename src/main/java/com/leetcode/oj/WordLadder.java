@@ -1,51 +1,55 @@
-/*
-0.Problem:
-0.0
-Given two words (start and end), and a dictionary, find the length 
-of shortest transformation sequence from start to end, such that:
-Only one letter can be changed at a time
-Each intermediate word must exist in the dictionary
-For example,
-Given:
-start = "hit"
-end = "cog"
-dict = ["hot","dot","dog","lot","log"]
-As one shortest transformation is "hit" -> "hot" -> "dot" -> "dog" -> "cog",
-return its length 5.
-Note:
-Return 0 if there is no such transformation sequence.
-All words have the same length.
-All words contain only lowercase alphabetic characters.
-
-0.1
-Given two words (start and end), and a dictionary, find all shortest 
-transformation sequence(s) from start to end, such that:
-Only one letter can be changed at a time
-Each intermediate word must exist in the dictionary
-For example,
-Given:
-start = "hit"
-end = "cog"
-dict = ["hot","dot","dog","lot","log"]
-Return
-  [
-    ["hit","hot","dot","dog","cog"],
-    ["hit","hot","lot","log","cog"]
-  ]
-Note:
-All words have the same length.
-All words contain only lowercase alphabetic characters.
-
-1.Refer.:
-1.0 ladderLength3(String start, String end, Set<String> dict)
-利用Stack实现字典内的transformation广度优先遍历;
-利用Map存储start到当前字符串之间的最短距离;
-
-1.1
-同1.0利用stack实现字典内的transformation广度优先遍历;
-同时在遍历过程中利用Map实现一个从end到start的有向图graph；
-有向图深度优先遍历；
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * 0.0
+ * Given two words (start and end), and a dictionary, find the length 
+ * of shortest transformation sequence from start to end, such that:
+ * Only one letter can be changed at a time
+ * Each intermediate word must exist in the dictionary
+ * For example,
+ * Given:
+ * start = "hit"
+ * end = "cog"
+ * dict = ["hot","dot","dog","lot","log"]
+ * As one shortest transformation is "hit" -> "hot" -> "dot" -> "dog" -> "cog",
+ * return its length 5.
+ * Note:
+ * Return 0 if there is no such transformation sequence.
+ * All words have the same length.
+ * All words contain only lowercase alphabetic characters.
+ * 
+ * 0.1
+ * Given two words (start and end), and a dictionary, find all shortest 
+ * transformation sequence(s) from start to end, such that:
+ * Only one letter can be changed at a time
+ * Each intermediate word must exist in the dictionary
+ * For example,
+ * Given:
+ * start = "hit"
+ * end = "cog"
+ * dict = ["hot","dot","dog","lot","log"]
+ * Return
+ *   [
+ *     ["hit","hot","dot","dog","cog"],
+ *     ["hit","hot","lot","log","cog"]
+ *   ]
+ * Note:
+ * All words have the same length.
+ * All words contain only lowercase alphabetic characters.
+ * 
+ * 1.Refer.:
+ * 1.0 ladderLength3(String start, String end, Set<String> dict)
+ * 利用Stack实现字典内的transformation广度优先遍历;
+ * 利用Map存储start到当前字符串之间的最短距离;
+ * 
+ * 1.1
+ * 同1.0利用stack实现字典内的transformation广度优先遍历;
+ * 同时在遍历过程中利用Map实现一个从end到start的有向图graph；
+ * 有向图深度优先遍历；
+ */
 package com.leetcode.oj;
 
 import java.util.ArrayList;

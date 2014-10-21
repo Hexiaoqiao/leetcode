@@ -1,15 +1,19 @@
-/*
-0.Problem:
-Given a collection of intervals, merge all overlapping intervals.
-For example,
-Given [1,3],[2,6],[8,10],[15,18],
-return [1,6],[8,10],[15,18].
-
-1.Refer.:
-1.0 按照intervals的左区间升序排序；
-1.1 顺序遍历intervals，比较当前interval的右区别和下一interval的左右区间值
-决定是否合并
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * Given a collection of intervals, merge all overlapping intervals.
+ * For example,
+ * Given [1,3],[2,6],[8,10],[15,18],
+ * return [1,6],[8,10],[15,18].
+ * 
+ * 1.Refer.:
+ * 1.0 按照intervals的左区间升序排序；
+ * 1.1 顺序遍历intervals，比较当前interval的右区别和下一interval的左右区间值
+ * 决定是否合并
+ */
 package com.leetcode.oj;
 
 import java.util.ArrayList;

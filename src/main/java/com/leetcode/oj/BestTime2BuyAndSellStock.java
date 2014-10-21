@@ -1,39 +1,43 @@
-/*
-0.Problem:
-0.0:
-Say you have an array for which the ith element is the price of a given 
-stock on day i.
-
-If you were only permitted to complete at most one transaction (ie, buy 
-one and sell one share of the stock), design an algorithm to find the 
-maximum profit.
-
-0.1
-Say you have an array for which the ith element is the price of a given 
-stock on day i.
-
-Design an algorithm to find the maximum profit. You may complete as many 
-transactions as you like (ie, buy one and sell one share of the stock 
-multiple times). However, you may not engage in multiple transactions at 
-the same time (ie, you must sell the stock before you buy again).
-
-0.2
-Say you have an array for which the ith element is the price of a given 
-stock on day i.
-
-Design an algorithm to find the maximum profit. You may complete at most 
-two transactions.
-
-Note:
-You may not engage in multiple transactions at the same time (ie, you must 
-sell the stock before you buy again).
-
-1.Refer.:
-1.0:逐个遍历，记录截止当前记录最小值，当前记录与最小记录之间的差值与当前最大结果比较；
-1.1:逐个遍历，只要当前记录大于前一记录立即进行一次卖出-买入操作；
-1.2:先从整个记录中找到交易一次最大利润时的边界[min,max],同样的方式探索[0,min],[max,length]
-及[min,k],[k,max]取其最大值。(注：效率不是最优)
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * 0.0:
+ * Say you have an array for which the ith element is the price of a given 
+ * stock on day i.
+ * 
+ * If you were only permitted to complete at most one transaction (ie, buy 
+ * one and sell one share of the stock), design an algorithm to find the 
+ * maximum profit.
+ * 
+ * 0.1
+ * Say you have an array for which the ith element is the price of a given 
+ * stock on day i.
+ * 
+ * Design an algorithm to find the maximum profit. You may complete as many 
+ * transactions as you like (ie, buy one and sell one share of the stock 
+ * multiple times). However, you may not engage in multiple transactions at 
+ * the same time (ie, you must sell the stock before you buy again).
+ * 
+ * 0.2
+ * Say you have an array for which the ith element is the price of a given 
+ * stock on day i.
+ * 
+ * Design an algorithm to find the maximum profit. You may complete at most 
+ * two transactions.
+ * 
+ * Note:
+ * You may not engage in multiple transactions at the same time (ie, you must 
+ * sell the stock before you buy again).
+ * 
+ * 1.Refer.:
+ * 1.0:逐个遍历，记录截止当前记录最小值，当前记录与最小记录之间的差值与当前最大结果比较；
+ * 1.1:逐个遍历，只要当前记录大于前一记录立即进行一次卖出-买入操作；
+ * 1.2:先从整个记录中找到交易一次最大利润时的边界[min,max],同样的方式探索[0,min],[max,length]
+ * 及[min,k],[k,max]取其最大值。(注：效率不是最优)
+ */
 package com.leetcode.oj;
 
 import java.util.ArrayList;

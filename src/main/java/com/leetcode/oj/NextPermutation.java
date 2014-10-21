@@ -1,27 +1,31 @@
-/*
-0.Problem:
-Implement next permutation, which rearranges numbers into the 
-lexicographically next greater permutation of numbers.
-If such arrangement is not possible, it must rearrange it as 
-the lowest possible order (ie, sorted in ascending order).
-The replacement must be in-place, do not allocate extra memory.
-Here are some examples. Inputs are in the left-hand column and 
-its corresponding outputs are in the right-hand column.
-1,2,3 → 1,3,2
-3,2,1 → 1,2,3
-1,1,5 → 1,5,1
-
-1.Refer.:
-1.0 尾部开始，从右向左遍历，到第一个满足num[i] < num[i+1]，记录i；
-1.1 重新从尾部开始，找到第一个满足num[j]>num[i]，记录j;
-1.2 交换i,j;
-1.3 将位置i之后的数据倒排；
-e.g.:
-  			5 2 1 2 5 4 3
-1.0 + 1.1:        i     j
-1.2			5 2 1 3 5 4 2
-1.3			5 2 1 2 3 4 5
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * Implement next permutation, which rearranges numbers into the 
+ * lexicographically next greater permutation of numbers.
+ * If such arrangement is not possible, it must rearrange it as 
+ * the lowest possible order (ie, sorted in ascending order).
+ * The replacement must be in-place, do not allocate extra memory.
+ * Here are some examples. Inputs are in the left-hand column and 
+ * its corresponding outputs are in the right-hand column.
+ * 1,2,3 → 1,3,2
+ * 3,2,1 → 1,2,3
+ * 1,1,5 → 1,5,1
+ * 
+ * 1.Refer.:
+ * 1.0 尾部开始，从右向左遍历，到第一个满足num[i] < num[i+1]，记录i；
+ * 1.1 重新从尾部开始，找到第一个满足num[j]>num[i]，记录j;
+ * 1.2 交换i,j;
+ * 1.3 将位置i之后的数据倒排；
+ * e.g.:
+ *   			5 2 1 2 5 4 3
+ * 1.0 + 1.1:        i     j
+ * 1.2			5 2 1 3 5 4 2
+ * 1.3			5 2 1 2 3 4 5
+ */
 package com.leetcode.oj;
 
 public class NextPermutation {

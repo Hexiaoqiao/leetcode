@@ -1,9 +1,13 @@
-/*
-0.Problem:
-Implement pow(x, n).
-
-1.Refer.：refer代码
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * Implement pow(x, n).
+ * 
+ * 1.Refer.：refer代码
+ */
 package com.leetcode.oj;
 
 public class PowXN {

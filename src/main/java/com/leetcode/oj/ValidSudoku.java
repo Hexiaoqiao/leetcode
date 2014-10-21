@@ -1,24 +1,28 @@
-/*
-0.Problem:
-0.0
-Determine if a Sudoku is valid, according to: Sudoku Puzzles - The 
-Rules (via http://sudoku.com.au/TheRules.aspx).
-The Sudoku board could be partially filled, where empty cells are 
-filled with the character '.'.
-
-0.1
-Write a program to solve a Sudoku puzzle by filling the empty cells.
-Empty cells are indicated by the character '.'.
-You may assume that there will be only one unique solution.
-
-1.Refer.:
-1.0 顺序
-每行/每列/每3*3内分别进行检查
-
-1.1 递归
-对每一个'.'分别填入'1..9'后应用1.0进行检查，通过后递归填入其他'.'处
-
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * 0.0
+ * Determine if a Sudoku is valid, according to: Sudoku Puzzles - The 
+ * Rules (via http://sudoku.com.au/TheRules.aspx).
+ * The Sudoku board could be partially filled, where empty cells are 
+ * filled with the character '.'.
+ * 
+ * 0.1
+ * Write a program to solve a Sudoku puzzle by filling the empty cells.
+ * Empty cells are indicated by the character '.'.
+ * You may assume that there will be only one unique solution.
+ * 
+ * 1.Refer.:
+ * 1.0 顺序
+ * 每行/每列/每3*3内分别进行检查
+ * 
+ * 1.1 递归
+ * 对每一个'.'分别填入'1..9'后应用1.0进行检查，通过后递归填入其他'.'处
+ * 
+ */
 package com.leetcode.oj;
 
 public class ValidSudoku {

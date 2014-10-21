@@ -1,14 +1,18 @@
-/*
-0.Problem:
-Given n points on a 2D plane, find the maximum number of 
-points that lie on the same straight line.
-
-1.Refer.:
-1.0 按照point映射到横坐标上的升序对point进行排序（若相等纵坐标升序排）；
-1.1 顺序遍历point：
-	计算当前point与其后point之间的斜率，记录相同斜率point的最大数目；
-1.2 返回最大值；
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * Given n points on a 2D plane, find the maximum number of 
+ * points that lie on the same straight line.
+ * 
+ * 1.Refer.:
+ * 1.0 按照point映射到横坐标上的升序对point进行排序（若相等纵坐标升序排）；
+ * 1.1 顺序遍历point：
+ * 	计算当前point与其后point之间的斜率，记录相同斜率point的最大数目；
+ * 1.2 返回最大值；
+ */
 package com.leetcode.oj;
 
 import java.util.ArrayList;

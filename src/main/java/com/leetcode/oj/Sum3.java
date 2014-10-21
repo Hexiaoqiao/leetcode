@@ -1,21 +1,25 @@
-/*
-0.Problem:
-Given an array S of n integers, are there elements a, b, c in S such that 
-a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
-
-Note:
-Elements in a triplet (a,b,c) must be in non-descending order. (ie, a ≤ b ≤ c)
-The solution set must not contain duplicate triplets.
-    For example, given array S = {-1 0 1 2 -1 -4},
-
-    A solution set is:
-    (-1, 0, 1)
-    (-1, -1, 2)
-    
-1.Refer.: 同@SumClosest
-1.0 排序
-1.1 取子数组的两端数据然后二分查找，如果符合要求将其加入结果集合里
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * Given an array S of n integers, are there elements a, b, c in S such that 
+ * a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
+ * 
+ * Note:
+ * Elements in a triplet (a,b,c) must be in non-descending order. (ie, a ≤ b ≤ c)
+ * The solution set must not contain duplicate triplets.
+ *     For example, given array S = {-1 0 1 2 -1 -4},
+ * 
+ *     A solution set is:
+ *     (-1, 0, 1)
+ *     (-1, -1, 2)
+ *     
+ * 1.Refer.: 同@SumClosest
+ * 1.0 排序
+ * 1.1 取子数组的两端数据然后二分查找，如果符合要求将其加入结果集合里
+ */
 package com.leetcode.oj;
 
 import java.util.ArrayList;

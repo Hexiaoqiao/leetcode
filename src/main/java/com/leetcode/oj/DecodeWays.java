@@ -1,27 +1,31 @@
-/*
-0.Problem:
-A message containing letters from A-Z is being encoded to 
-numbers using the following mapping:
-'A' -> 1
-'B' -> 2
-...
-'Z' -> 26
-Given an encoded message containing digits, determine the 
-total number of ways to decode it.
-
-For example,
-Given encoded message "12", it could be decoded as "AB" (1 2) 
-or "L" (12).
-The number of ways decoding "12" is 2.
-
-1.Refer.:DP
-从1..s.len逐个计算解码数量
-				  /  0 (s[n] = '0' && s[n]+s[n-1] != {'10','20'})
-				  |- numDecodings[n - 2] (s[n] = '0' && s[n]+s[n-1] = {'10','20'})
-numDecodings[n] = |
-				  |- numDecodings[n - 1] (s[n]+s[n-1] not in ['10','26'])
-				  \  numDecodings[n - 1] + numDecodings[n - 2] (s[n]+s[n-1] in ['10','26'])
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * A message containing letters from A-Z is being encoded to 
+ * numbers using the following mapping:
+ * 'A' -> 1
+ * 'B' -> 2
+ * ...
+ * 'Z' -> 26
+ * Given an encoded message containing digits, determine the 
+ * total number of ways to decode it.
+ * 
+ * For example,
+ * Given encoded message "12", it could be decoded as "AB" (1 2) 
+ * or "L" (12).
+ * The number of ways decoding "12" is 2.
+ * 
+ * 1.Refer.:DP
+ * 从1..s.len逐个计算解码数量
+ * 				  /  0 (s[n] = '0' && s[n]+s[n-1] != {'10','20'})
+ * 				  |- numDecodings[n - 2] (s[n] = '0' && s[n]+s[n-1] = {'10','20'})
+ * numDecodings[n] = |
+ * 				  |- numDecodings[n - 1] (s[n]+s[n-1] not in ['10','26'])
+ * 				  \  numDecodings[n - 1] + numDecodings[n - 2] (s[n]+s[n-1] in ['10','26'])
+ */
 package com.leetcode.oj;
 
 public class DecodeWays {

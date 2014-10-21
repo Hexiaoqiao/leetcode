@@ -1,12 +1,16 @@
-/*
-0.Problem:
-Implement strStr().
-Returns a pointer to the first occurrence of needle in haystack, 
-or null if needle is not part of haystack.
-
-1.Refer.:
-两重循环
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * Implement strStr().
+ * Returns a pointer to the first occurrence of needle in haystack, 
+ * or null if needle is not part of haystack.
+ * 
+ * 1.Refer.:
+ * 两重循环
+ */
 package com.leetcode.oj;
 
 public class ImplementStrStr {

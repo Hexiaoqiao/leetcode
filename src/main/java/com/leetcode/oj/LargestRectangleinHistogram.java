@@ -1,21 +1,25 @@
-/*
-0.Problem:
-https://oj.leetcode.com/problems/largest-rectangle-in-histogram/
-
-Given n non-negative integers representing the histogram's bar height where 
-the width of each bar is 1, find the area of largest rectangle in the histogram.
-Above is a histogram where width of each bar is 1, given height = [2,1,5,6,2,3].
-The largest rectangle is shown in the shaded area, which has area = 10 unit.
-For example,
-Given height = [2,1,5,6,2,3],
-return 10.
-
-1.Refer.:
-顺序遍历当前节点:
-1)记录当前节点左边高度均大于当前节点高度的最远距离；
-2)记录当前节点右边高度均大于当前节点高度的最远距离；
-再次遍历计算1)2)差值与距离乘积去最大值
-*/                                                       
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * https://oj.leetcode.com/problems/largest-rectangle-in-histogram/
+ * 
+ * Given n non-negative integers representing the histogram's bar height where 
+ * the width of each bar is 1, find the area of largest rectangle in the histogram.
+ * Above is a histogram where width of each bar is 1, given height = [2,1,5,6,2,3].
+ * The largest rectangle is shown in the shaded area, which has area = 10 unit.
+ * For example,
+ * Given height = [2,1,5,6,2,3],
+ * return 10.
+ * 
+ * 1.Refer.:
+ * 顺序遍历当前节点:
+ * 1)记录当前节点左边高度均大于当前节点高度的最远距离；
+ * 2)记录当前节点右边高度均大于当前节点高度的最远距离；
+ * 再次遍历计算1)2)差值与距离乘积去最大值
+ */                                                       
 package com.leetcode.oj;
 
 public class LargestRectangleinHistogram {

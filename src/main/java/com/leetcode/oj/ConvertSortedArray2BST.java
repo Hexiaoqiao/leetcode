@@ -1,13 +1,17 @@
-/*
-0.Problem:
-Given an array where elements are sorted in ascending order, 
-convert it to a height balanced BST.
-
-1.Refer.:
-1.0 取数组中间数字为root；
-1.1 root左边递归BST，root右边递归BST
-1.2 root-left，root-right组合
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * Given an array where elements are sorted in ascending order, 
+ * convert it to a height balanced BST.
+ * 
+ * 1.Refer.:
+ * 1.0 取数组中间数字为root；
+ * 1.1 root左边递归BST，root右边递归BST
+ * 1.2 root-left，root-right组合
+ */
 package com.leetcode.oj;
 
 public class ConvertSortedArray2BST {

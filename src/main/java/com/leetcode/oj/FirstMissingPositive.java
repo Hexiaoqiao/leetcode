@@ -1,16 +1,20 @@
-/*
-0.Problem:
-Given an unsorted integer array, find the first missing positive integer.
-For example,
-Given [1,2,0] return 3,
-and [3,4,-1,1] return 2.
-
-Your algorithm should run in O(n) time and uses constant space.
-
-1.Refer.:
-1.0 重排不在对应顺序上的数据；
-1.1 顺序遍历数组找到第一个与顺序号不匹配数据；
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * Given an unsorted integer array, find the first missing positive integer.
+ * For example,
+ * Given [1,2,0] return 3,
+ * and [3,4,-1,1] return 2.
+ * 
+ * Your algorithm should run in O(n) time and uses constant space.
+ * 
+ * 1.Refer.:
+ * 1.0 重排不在对应顺序上的数据；
+ * 1.1 顺序遍历数组找到第一个与顺序号不匹配数据；
+ */
 package com.leetcode.oj;
 
 public class FirstMissingPositive {

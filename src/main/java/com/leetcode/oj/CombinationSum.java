@@ -1,49 +1,53 @@
-/*
-0.Problem:
-0.0
-Given a set of candidate numbers (C) and a target number (T), find all 
-unique combinations in C where the candidate numbers sums to T.
-
-The same repeated number may be chosen from C unlimited number of times.
-
-Note:
-All numbers (including target) will be positive integers.
-Elements in a combination (a1, a2, … , ak) must be in non-descending order. 
-(ie, a1 ≤ a2 ≤ … ≤ ak).
-The solution set must not contain duplicate combinations.
-For example, given candidate set 2,3,6,7 and target 7, 
-A solution set is: 
-[7] 
-[2, 2, 3] 
-
-0.1
-Given a collection of candidate numbers (C) and a target number (T), 
-find all unique combinations in C where the candidate numbers sums to T.
-
-Each number in C may only be used once in the combination.
-
-Note:
-All numbers (including target) will be positive integers.
-Elements in a combination (a1, a2, … , ak) must be in non-descending 
-order. (ie, a1 ≤ a2 ≤ … ≤ ak).
-The solution set must not contain duplicate combinations.
-For example, given candidate set 10,1,2,7,6,1,5 and target 8, 
-A solution set is: 
-[1, 7] 
-[1, 2, 5] 
-[2, 6] 
-[1, 1, 6] 
-
-1.Refer.:
-1.0 递归
-0) 排序；
-1）从后往前找到第一个小于target的数num；
-2）应用递归在集合里查询结果是target-num的集合
-3）步骤2）结果与1）中的元素合并即为结果的一个元素
-
-1.1 递归童1.0
-0）方法同1.0，区别仅在步骤2）中增加集合元素去重
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * 0.0
+ * Given a set of candidate numbers (C) and a target number (T), find all 
+ * unique combinations in C where the candidate numbers sums to T.
+ * 
+ * The same repeated number may be chosen from C unlimited number of times.
+ * 
+ * Note:
+ * All numbers (including target) will be positive integers.
+ * Elements in a combination (a1, a2, … , ak) must be in non-descending order. 
+ * (ie, a1 ≤ a2 ≤ … ≤ ak).
+ * The solution set must not contain duplicate combinations.
+ * For example, given candidate set 2,3,6,7 and target 7, 
+ * A solution set is: 
+ * [7] 
+ * [2, 2, 3] 
+ * 
+ * 0.1
+ * Given a collection of candidate numbers (C) and a target number (T), 
+ * find all unique combinations in C where the candidate numbers sums to T.
+ * 
+ * Each number in C may only be used once in the combination.
+ * 
+ * Note:
+ * All numbers (including target) will be positive integers.
+ * Elements in a combination (a1, a2, … , ak) must be in non-descending 
+ * order. (ie, a1 ≤ a2 ≤ … ≤ ak).
+ * The solution set must not contain duplicate combinations.
+ * For example, given candidate set 10,1,2,7,6,1,5 and target 8, 
+ * A solution set is: 
+ * [1, 7] 
+ * [1, 2, 5] 
+ * [2, 6] 
+ * [1, 1, 6] 
+ * 
+ * 1.Refer.:
+ * 1.0 递归
+ * 0) 排序；
+ * 1）从后往前找到第一个小于target的数num；
+ * 2）应用递归在集合里查询结果是target-num的集合
+ * 3）步骤2）结果与1）中的元素合并即为结果的一个元素
+ * 
+ * 1.1 递归童1.0
+ * 0）方法同1.0，区别仅在步骤2）中增加集合元素去重
+ */
 package com.leetcode.oj;
 
 import java.util.ArrayList;

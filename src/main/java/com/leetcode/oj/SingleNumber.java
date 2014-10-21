@@ -1,25 +1,29 @@
-/*
-0.Problem:
-0.0
-Given an array of integers, every element appears twice 
-except for one. Find that single one.
-Note:
-Your algorithm should have a linear runtime complexity. 
-Could you implement it without using extra memory?
-0.1
-Given an array of integers, every element appears three 
-times except for one. Find that single one.
-Note:
-Your algorithm should have a linear runtime complexity. 
-Could you implement it without using extra memory?
-
-1.Refer.:
-1.0
-抑或所有数据
-
-1.1
-逐位计算结果，所有数据固定位求和模3
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * 0.0
+ * Given an array of integers, every element appears twice 
+ * except for one. Find that single one.
+ * Note:
+ * Your algorithm should have a linear runtime complexity. 
+ * Could you implement it without using extra memory?
+ * 0.1
+ * Given an array of integers, every element appears three 
+ * times except for one. Find that single one.
+ * Note:
+ * Your algorithm should have a linear runtime complexity. 
+ * Could you implement it without using extra memory?
+ * 
+ * 1.Refer.:
+ * 1.0
+ * 抑或所有数据
+ * 
+ * 1.1
+ * 逐位计算结果，所有数据固定位求和模3
+ */
 package com.leetcode.oj;
 
 public class SingleNumber {

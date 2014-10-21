@@ -1,32 +1,36 @@
-/*
-0.Problem:
-0.0
-Given a string s, partition s such that every substring of 
-the partition is a palindrome.
-Return all possible palindrome partitioning of s.
-For example, given s = "aab",
-Return
-  [
-    ["aa","b"],
-    ["a","a","b"]
-  ]
-
-0.1
-Given a string s, partition s such that every substring of 
-the partition is a palindrome.
-Return the minimum cuts needed for a palindrome partitioning of s.
-For example, given s = "aab",
-Return 1 since the palindrome partitioning ["aa","b"] could be 
-produced using 1 cut.  
-
-1.Refer.:
-1.0 循环检查字符串中前i(1..n)个子字符串是否为palindrome，若是，递归剩下部分
-1.1 DP start标识从start开始到字符串尾部的mincut
-初始：result[start] = len - start - 1;
-当 palindrome[start][end]=true即字符串的start到end段为palindrome:
-result[start] = result[start] < result[end + 1] + 1 ? 
-		result[start] : result[end + 1] + 1;
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * 0.0
+ * Given a string s, partition s such that every substring of 
+ * the partition is a palindrome.
+ * Return all possible palindrome partitioning of s.
+ * For example, given s = "aab",
+ * Return
+ *   [
+ *     ["aa","b"],
+ *     ["a","a","b"]
+ *   ]
+ * 
+ * 0.1
+ * Given a string s, partition s such that every substring of 
+ * the partition is a palindrome.
+ * Return the minimum cuts needed for a palindrome partitioning of s.
+ * For example, given s = "aab",
+ * Return 1 since the palindrome partitioning ["aa","b"] could be 
+ * produced using 1 cut.  
+ * 
+ * 1.Refer.:
+ * 1.0 循环检查字符串中前i(1..n)个子字符串是否为palindrome，若是，递归剩下部分
+ * 1.1 DP start标识从start开始到字符串尾部的mincut
+ * 初始：result[start] = len - start - 1;
+ * 当 palindrome[start][end]=true即字符串的start到end段为palindrome:
+ * result[start] = result[start] < result[end + 1] + 1 ? 
+ * 		result[start] : result[end + 1] + 1;
+ */
 package com.leetcode.oj;
 
 import java.util.ArrayList;

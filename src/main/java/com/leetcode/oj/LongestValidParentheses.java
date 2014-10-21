@@ -1,15 +1,19 @@
-/*
-0.Problem:
-Given a string containing just the characters '(' and ')', find 
-the length of the longest valid (well-formed) parentheses substring.
-For "(()", the longest valid parentheses substring is "()", which 
-has length = 2.
-Another example is ")()())", where the longest valid parentheses 
-substring is "()()", which has length = 4.
-
-1.Refer.:栈
-同ValidParentheses 1.1，同时记录当前最大匹配括号对的长度
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * Given a string containing just the characters '(' and ')', find 
+ * the length of the longest valid (well-formed) parentheses substring.
+ * For "(()", the longest valid parentheses substring is "()", which 
+ * has length = 2.
+ * Another example is ")()())", where the longest valid parentheses 
+ * substring is "()()", which has length = 4.
+ * 
+ * 1.Refer.:栈
+ * 同ValidParentheses 1.1，同时记录当前最大匹配括号对的长度
+ */
 package com.leetcode.oj;
 
 import java.util.Stack;

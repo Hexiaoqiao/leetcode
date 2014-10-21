@@ -1,19 +1,23 @@
-/*
-0.Problem:
-You are given a string, S, and a list of words, L, that are all of 
-the same length. Find all starting indices of substring(s) in S that 
-is a concatenation of each word in L exactly once and without any 
-intervening characters.
-For example, given:
-S: "barfoothefoobarman"
-L: ["foo", "bar"]
-You should return the indices: [0,9].
-(order does not matter).
-
-1.Refer.:
-1.0 将字符串数组中的字符串与其个数放入HashMap中；
-1.1 顺序遍历字符串当当HashMap中所有key值均为0时记录当前值，继续遍历
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * You are given a string, S, and a list of words, L, that are all of 
+ * the same length. Find all starting indices of substring(s) in S that 
+ * is a concatenation of each word in L exactly once and without any 
+ * intervening characters.
+ * For example, given:
+ * S: "barfoothefoobarman"
+ * L: ["foo", "bar"]
+ * You should return the indices: [0,9].
+ * (order does not matter).
+ * 
+ * 1.Refer.:
+ * 1.0 将字符串数组中的字符串与其个数放入HashMap中；
+ * 1.1 顺序遍历字符串当当HashMap中所有key值均为0时记录当前值，继续遍历
+ */
 package com.leetcode.oj;
 
 import java.util.ArrayList;

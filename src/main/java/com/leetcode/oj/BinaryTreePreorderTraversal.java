@@ -1,24 +1,28 @@
-/*
-0.Problem:
-Given a binary tree, return the preorder traversal of its nodes' values.
-
-For example:
-Given binary tree {1,#,2,3},
-   1
-    \
-     2
-    /
-   3
-return [1,2,3].
-
-Note: Recursive solution is trivial, could you do it iteratively?
-
-1.Refer.: 栈
-1.0 若当前节点非空，访问并入栈；
-1.1 沿左子树向下到头访问并入栈；
-1.2 出栈一个节点，当前节点移至其有子树；
-1.3 重复上述步骤；
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * Given a binary tree, return the preorder traversal of its nodes' values.
+ * 
+ * For example:
+ * Given binary tree {1,#,2,3},
+ *    1
+ *     \
+ *      2
+ *     /
+ *    3
+ * return [1,2,3].
+ * 
+ * Note: Recursive solution is trivial, could you do it iteratively?
+ * 
+ * 1.Refer.: 栈
+ * 1.0 若当前节点非空，访问并入栈；
+ * 1.1 沿左子树向下到头访问并入栈；
+ * 1.2 出栈一个节点，当前节点移至其有子树；
+ * 1.3 重复上述步骤；
+ */
 package com.leetcode.oj;
 
 import java.util.ArrayList;

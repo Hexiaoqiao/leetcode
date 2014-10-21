@@ -1,13 +1,17 @@
-/*
-0.Problem:
-Given two binary strings, return their sum (also a binary string).
-For example,
-    a = "11"
-    b = "1"
-    Return "100".
-1.Refer.:
-1.0从后往前逐位、进位相加；
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * Given two binary strings, return their sum (also a binary string).
+ * For example,
+ *     a = "11"
+ *     b = "1"
+ *     Return "100".
+ * 1.Refer.:
+ * 1.0从后往前逐位、进位相加；
+ */
 package com.leetcode.oj;
 
 public class AddBinary {

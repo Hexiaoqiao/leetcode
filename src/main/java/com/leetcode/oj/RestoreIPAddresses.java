@@ -1,16 +1,20 @@
-/*
-0.Problem:
-Given a string containing only digits, restore it by returning all 
-possible valid IP address combinations.
-For example:
-Given "25525511135",
-return ["255.255.11.135", "255.255.111.35"]. (Order does not matter)
-
-1.Refer.:栈
-1.0 栈里存储ip的各位长度；
-1.1 四叉数深度优先遍历；
-1.2 遇到合理结果加入结果集中
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * Given a string containing only digits, restore it by returning all 
+ * possible valid IP address combinations.
+ * For example:
+ * Given "25525511135",
+ * return ["255.255.11.135", "255.255.111.35"]. (Order does not matter)
+ * 
+ * 1.Refer.:栈
+ * 1.0 栈里存储ip的各位长度；
+ * 1.1 四叉数深度优先遍历；
+ * 1.2 遇到合理结果加入结果集中
+ */
 package com.leetcode.oj;
 
 import java.util.ArrayList;

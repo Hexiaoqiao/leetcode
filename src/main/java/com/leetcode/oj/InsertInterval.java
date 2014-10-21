@@ -1,21 +1,25 @@
-/*
-0.Problem:
-Given a set of non-overlapping intervals, insert a new interval 
-into the intervals (merge if necessary).
-You may assume that the intervals were initially sorted according 
-to their start times.
-
-Example 1:
-Given intervals [1,3],[6,9], insert and merge [2,5] in as [1,5],[6,9].
-Example 2:
-Given [1,2],[3,5],[6,7],[8,10],[12,16], insert and merge [4,9] in as 
-[1,2],[3,10],[12,16].
-This is because the new interval [4,9] overlaps with [3,5],[6,7],[8,10].
-
-1.Refer.:
-1.0 将new interval插入到list头；
-1.1 逐个遍历list的元素，比较new interval的start和end，确定当前元素需要删除/合并等；
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * Given a set of non-overlapping intervals, insert a new interval 
+ * into the intervals (merge if necessary).
+ * You may assume that the intervals were initially sorted according 
+ * to their start times.
+ * 
+ * Example 1:
+ * Given intervals [1,3],[6,9], insert and merge [2,5] in as [1,5],[6,9].
+ * Example 2:
+ * Given [1,2],[3,5],[6,7],[8,10],[12,16], insert and merge [4,9] in as 
+ * [1,2],[3,10],[12,16].
+ * This is because the new interval [4,9] overlaps with [3,5],[6,7],[8,10].
+ * 
+ * 1.Refer.:
+ * 1.0 将new interval插入到list头；
+ * 1.1 逐个遍历list的元素，比较new interval的start和end，确定当前元素需要删除/合并等；
+ */
 package com.leetcode.oj;
 
 import java.util.ArrayList;

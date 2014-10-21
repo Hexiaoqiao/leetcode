@@ -1,23 +1,27 @@
-/*
-0.Problem:
-Given two integers n and k, return all possible combinations 
-of k numbers out of 1 ... n.
-
-For example,
-If n = 4 and k = 2, a solution is:
-
-[
-  [2,4],
-  [3,4],
-  [2,3],
-  [1,2],
-  [1,3],
-  [1,4],
-]
-
-1.Refer.:
-遍历组合：C(n,1),C(n,2),...,C(n,k)
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * Given two integers n and k, return all possible combinations 
+ * of k numbers out of 1 ... n.
+ * 
+ * For example,
+ * If n = 4 and k = 2, a solution is:
+ * 
+ * [
+ *   [2,4],
+ *   [3,4],
+ *   [2,3],
+ *   [1,2],
+ *   [1,3],
+ *   [1,4],
+ * ]
+ * 
+ * 1.Refer.:
+ * 遍历组合：C(n,1),C(n,2),...,C(n,k)
+ */
 package com.leetcode.oj;
 
 import java.util.ArrayList;

@@ -1,15 +1,19 @@
-/*
-0.Problem:
-Given a binary tree, determine if it is a valid binary search tree (BST).
-Assume a BST is defined as follows:
-The left subtree of a node contains only nodes with keys less than the node's key.
-The right subtree of a node contains only nodes with keys greater than the node's key.
-Both the left and right subtrees must also be binary search trees.
-
-1.Refer.:
-分治
-给每棵子树一个最大和最小值的限定，然后递归子树进行validBST检查
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * Given a binary tree, determine if it is a valid binary search tree (BST).
+ * Assume a BST is defined as follows:
+ * The left subtree of a node contains only nodes with keys less than the node's key.
+ * The right subtree of a node contains only nodes with keys greater than the node's key.
+ * Both the left and right subtrees must also be binary search trees.
+ * 
+ * 1.Refer.:
+ * 分治
+ * 给每棵子树一个最大和最小值的限定，然后递归子树进行validBST检查
+ */
 package com.leetcode.oj;
 
 public class ValidateBST {

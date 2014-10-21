@@ -1,13 +1,17 @@
-/*
-0.Problem:
-You are given an n x n 2D matrix representing an image.
-Rotate the image by 90 degrees (clockwise).
-Follow up:
-Could you do this in-place?
-
-1.Refer.:
-倒三角内数据顺时针方向向下一个三角内交换，四次完成
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * You are given an n x n 2D matrix representing an image.
+ * Rotate the image by 90 degrees (clockwise).
+ * Follow up:
+ * Could you do this in-place?
+ * 
+ * 1.Refer.:
+ * 倒三角内数据顺时针方向向下一个三角内交换，四次完成
+ */
 package com.leetcode.oj;
 
 public class RotateImage {

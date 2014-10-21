@@ -1,13 +1,17 @@
-/*
-0.Problem:
-Given a m x n grid filled with non-negative numbers, find a path 
-from top left to bottom right which minimizes the sum of all numbers 
-along its path.
-Note: You can only move either down or right at any point in time.
-
-1.Refer.:DP
- pathsum[i][j] = min(pathsum[i][j + 1] + grid[i][j],pathsum[i + 1][j] + grid[i][j])
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * Given a m x n grid filled with non-negative numbers, find a path 
+ * from top left to bottom right which minimizes the sum of all numbers 
+ * along its path.
+ * Note: You can only move either down or right at any point in time.
+ * 
+ * 1.Refer.:DP
+ *  pathsum[i][j] = min(pathsum[i][j + 1] + grid[i][j],pathsum[i + 1][j] + grid[i][j])
+ */
 package com.leetcode.oj;
 
 public class MinimumPathSum {

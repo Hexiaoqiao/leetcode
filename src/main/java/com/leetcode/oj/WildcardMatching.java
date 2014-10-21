@@ -1,25 +1,29 @@
-/*
-0.Problem:
-Implement wildcard pattern matching with support for '?' and '*'.
-'?' Matches any single character.
-'*' Matches any sequence of characters (including the empty sequence).
-The matching should cover the entire input string (not partial).
-The function prototype should be:
-bool isMatch(const char *s, const char *p)
-Some examples:
-isMatch("aa","a") → false
-isMatch("aa","aa") → true
-isMatch("aaa","aa") → false
-isMatch("aa", "*") → true
-isMatch("aa", "a*") → true
-isMatch("ab", "?*") → true
-isMatch("aab", "c*a*b") → false
-
-1.Refer.: Greedy
-从字符串s & p头部开始每次都选择当前的局部最优策略，当出现不匹配时回退到上次'*'
-下一位继续搜索
-
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * Implement wildcard pattern matching with support for '?' and '*'.
+ * '?' Matches any single character.
+ * '*' Matches any sequence of characters (including the empty sequence).
+ * The matching should cover the entire input string (not partial).
+ * The function prototype should be:
+ * bool isMatch(const char *s, const char *p)
+ * Some examples:
+ * isMatch("aa","a") → false
+ * isMatch("aa","aa") → true
+ * isMatch("aaa","aa") → false
+ * isMatch("aa", "*") → true
+ * isMatch("aa", "a*") → true
+ * isMatch("ab", "?*") → true
+ * isMatch("aab", "c*a*b") → false
+ * 
+ * 1.Refer.: Greedy
+ * 从字符串s & p头部开始每次都选择当前的局部最优策略，当出现不匹配时回退到上次'*'
+ * 下一位继续搜索
+ * 
+ */
 package com.leetcode.oj;
 
 public class WildcardMatching {

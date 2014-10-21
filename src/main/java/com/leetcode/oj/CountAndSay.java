@@ -1,17 +1,21 @@
-/*
-0.Problem:
-The count-and-say sequence is the sequence of integers beginning as follows:
-1, 11, 21, 1211, 111221, ...
-1 is read off as "one 1" or 11.
-11 is read off as "two 1s" or 21.
-21 is read off as "one 2, then one 1" or 1211.
-Given an integer n, generate the nth sequence.
-
-Note: The sequence of integers will be represented as a string.
-
-1.Refer.:DP
-从1..n遍历逐个countAndSay
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * The count-and-say sequence is the sequence of integers beginning as follows:
+ * 1, 11, 21, 1211, 111221, ...
+ * 1 is read off as "one 1" or 11.
+ * 11 is read off as "two 1s" or 21.
+ * 21 is read off as "one 2, then one 1" or 1211.
+ * Given an integer n, generate the nth sequence.
+ * 
+ * Note: The sequence of integers will be represented as a string.
+ * 
+ * 1.Refer.:DP
+ * 从1..n遍历逐个countAndSay
+ */
 package com.leetcode.oj;
 
 public class CountAndSay {

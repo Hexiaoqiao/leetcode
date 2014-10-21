@@ -1,21 +1,25 @@
-/*
-0.Problem:
-Given a 2D board containing 'X' and 'O', capture all regions surrounded by 'X'.
-A region is captured by flipping all 'O's into 'X's in that surrounded region.
-For example,
-X X X X
-X O O X
-X X O X
-X O X X
-After running your function, the board should be:
-X X X X
-X X X X
-X X X X
-X O X X
-
-1.Refer.:
-从外围'0'入口DFS遍历，将没有遍历到的'0'change成'X'
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * Given a 2D board containing 'X' and 'O', capture all regions surrounded by 'X'.
+ * A region is captured by flipping all 'O's into 'X's in that surrounded region.
+ * For example,
+ * X X X X
+ * X O O X
+ * X X O X
+ * X O X X
+ * After running your function, the board should be:
+ * X X X X
+ * X X X X
+ * X X X X
+ * X O X X
+ * 
+ * 1.Refer.:
+ * 从外围'0'入口DFS遍历，将没有遍历到的'0'change成'X'
+ */
 package com.leetcode.oj;
 
 public class SurroundedRegions {

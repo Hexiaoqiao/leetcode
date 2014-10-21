@@ -1,40 +1,44 @@
-/*
-0.Problem:
-0.0
-Given n, how many structurally unique BST's (binary search trees) that 
-store values 1...n?
-
-For example,
-Given n = 3, there are a total of 5 unique BST's.
-
-   1         3     3      2      1
-    \       /     /      / \      \
-     3     2     1      1   3      2
-    /     /       \                 \
-   2     1         2                 3
-
-0.1
-Given n, generate all structurally unique BST's (binary search trees) that 
-store values 1...n.
-
-For example,
-Given n = 3, your program should return all 5 unique BST's shown below.
-
-   1         3     3      2      1
-    \       /     /      / \      \
-     3     2     1      1   3      2
-    /     /       \                 \
-   2     1         2                 3
-
-1.Refer.:
-1.0 DP
-numTrees[i] = sum(numTrees[i-j] * numTrees[j]) - j=0..i
-
-1.1 分治（start,end）
-1.1.0 取i[start,end)为当前根节点
-1.1.1 分别就[start,i)，[i,end)构造左右子树
-1.1.2 左右子树的笛卡尔集合
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * 0.0
+ * Given n, how many structurally unique BST's (binary search trees) that 
+ * store values 1...n?
+ * 
+ * For example,
+ * Given n = 3, there are a total of 5 unique BST's.
+ * 
+ *    1         3     3      2      1
+ *     \       /     /      / \      \
+ *      3     2     1      1   3      2
+ *     /     /       \                 \
+ *    2     1         2                 3
+ * 
+ * 0.1
+ * Given n, generate all structurally unique BST's (binary search trees) that 
+ * store values 1...n.
+ * 
+ * For example,
+ * Given n = 3, your program should return all 5 unique BST's shown below.
+ * 
+ *    1         3     3      2      1
+ *     \       /     /      / \      \
+ *      3     2     1      1   3      2
+ *     /     /       \                 \
+ *    2     1         2                 3
+ * 
+ * 1.Refer.:
+ * 1.0 DP
+ * numTrees[i] = sum(numTrees[i-j] * numTrees[j]) - j=0..i
+ * 
+ * 1.1 分治（start,end）
+ * 1.1.0 取i[start,end)为当前根节点
+ * 1.1.1 分别就[start,i)，[i,end)构造左右子树
+ * 1.1.2 左右子树的笛卡尔集合
+ */
 package com.leetcode.oj;
 
 import java.util.ArrayList;

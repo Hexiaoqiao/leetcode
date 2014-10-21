@@ -1,17 +1,21 @@
-/*
-0.Problem:
-Two elements of a binary search tree (BST) are swapped by mistake.
-Recover the tree without changing its structure.
-Note:
-A solution using O(n) space is pretty straight forward. Could you 
-devise a constant space solution?
-confused what "{1,#,2,3}" means? 
-
-1.Refer.:
-1.0 中序遍历二叉树；
-1.1 找到遍历的结果中不符合大小顺序的两个Node
-1.2 交换1.1中的两个Node
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * Two elements of a binary search tree (BST) are swapped by mistake.
+ * Recover the tree without changing its structure.
+ * Note:
+ * A solution using O(n) space is pretty straight forward. Could you 
+ * devise a constant space solution?
+ * confused what "{1,#,2,3}" means? 
+ * 
+ * 1.Refer.:
+ * 1.0 中序遍历二叉树；
+ * 1.1 找到遍历的结果中不符合大小顺序的两个Node
+ * 1.2 交换1.1中的两个Node
+ */
 package com.leetcode.oj;
 
 import java.util.ArrayList;

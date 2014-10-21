@@ -1,25 +1,29 @@
-/*
-0.Problem:
-Given a string S and a string T, count the number of 
-distinct subsequences of T in S.
-
-A subsequence of a string is a new string which is formed 
-from the original string by deleting some (can be none) of 
-the characters without disturbing the relative positions of 
-the remaining characters. (ie, "ACE" is a subsequence of 
-"ABCDE" while "AEC" is not).
-
-Here is an example:
-S = "rabbbit", T = "rabbit"
-Return 3.
-
-1.Refer.:DP
-定义num[i][j]为S[0..i]与T[0..j]之间满足DistinctSubseqquences的个数，
-则：
-			/ num[i - 1][j] (S[i] != T[j])
-num[i][j] = |
-			\ num[i - 1][j - 1] + num[i - 1][j] (S[i] == T[j])
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * Given a string S and a string T, count the number of 
+ * distinct subsequences of T in S.
+ * 
+ * A subsequence of a string is a new string which is formed 
+ * from the original string by deleting some (can be none) of 
+ * the characters without disturbing the relative positions of 
+ * the remaining characters. (ie, "ACE" is a subsequence of 
+ * "ABCDE" while "AEC" is not).
+ * 
+ * Here is an example:
+ * S = "rabbbit", T = "rabbit"
+ * Return 3.
+ * 
+ * 1.Refer.:DP
+ * 定义num[i][j]为S[0..i]与T[0..j]之间满足DistinctSubseqquences的个数，
+ * 则：
+ * 			/ num[i - 1][j] (S[i] != T[j])
+ * num[i][j] = |
+ * 			\ num[i - 1][j - 1] + num[i - 1][j] (S[i] == T[j])
+ */
 package com.leetcode.oj;
 
 public class DistinctSubsequences {

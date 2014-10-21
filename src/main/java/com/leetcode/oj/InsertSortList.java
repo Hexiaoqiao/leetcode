@@ -1,10 +1,14 @@
-/*
-0.Problem:
-Sort a linked list using insertion sort.
-
-1.Refer.:
-链表插入排序：同数组插入排序，不同之处在于查找过程是顺序非二分
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * Sort a linked list using insertion sort.
+ * 
+ * 1.Refer.:
+ * 链表插入排序：同数组插入排序，不同之处在于查找过程是顺序非二分
+ */
 package com.leetcode.oj;
 
 public class InsertSortList {

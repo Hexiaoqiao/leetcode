@@ -1,25 +1,29 @@
-/*
-0.Problem:
-Given a binary tree, return the postorder traversal of its nodes' values.
-
-For example:
-Given binary tree {1,#,2,3},
-   1
-    \
-     2
-    /
-   3
-return [3,2,1].
-
-Note: Recursive solution is trivial, could you do it iteratively?
-
-1.Refer.: 栈+遍历记录
-1.0 若当前节点非空沿着左子树到头并压栈，记录初次访问；
-1.1 出栈一个元素:
-	0)如果当前节点仅经过初次访问，重新压栈并标记其非初次访问，并指向其右子树；
-	1)如果当前节点非初次访问，进入结果队列中；标记当期那节点为空；
-1.2 重复上述步骤；
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * Given a binary tree, return the postorder traversal of its nodes' values.
+ * 
+ * For example:
+ * Given binary tree {1,#,2,3},
+ *    1
+ *     \
+ *      2
+ *     /
+ *    3
+ * return [3,2,1].
+ * 
+ * Note: Recursive solution is trivial, could you do it iteratively?
+ * 
+ * 1.Refer.: 栈+遍历记录
+ * 1.0 若当前节点非空沿着左子树到头并压栈，记录初次访问；
+ * 1.1 出栈一个元素:
+ * 	0)如果当前节点仅经过初次访问，重新压栈并标记其非初次访问，并指向其右子树；
+ * 	1)如果当前节点非初次访问，进入结果队列中；标记当期那节点为空；
+ * 1.2 重复上述步骤；
+ */
 package com.leetcode.oj;
 
 import java.util.ArrayList;

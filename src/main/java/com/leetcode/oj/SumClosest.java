@@ -1,17 +1,21 @@
-/*
-0.Problem:
-Given an array S of n integers, find three integers in S such that the 
-sum is closest to a given number, target. Return the sum of the three 
-integers. You may assume that each input would have exactly one solution.
-
-    For example, given array S = {-1 2 1 -4}, and target = 1.
-
-    The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
-
-1.Refer.:
-1.0 排序
-1.1 取子数组的两端数据然后二分查找
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * Given an array S of n integers, find three integers in S such that the 
+ * sum is closest to a given number, target. Return the sum of the three 
+ * integers. You may assume that each input would have exactly one solution.
+ * 
+ *     For example, given array S = {-1 2 1 -4}, and target = 1.
+ * 
+ *     The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
+ * 
+ * 1.Refer.:
+ * 1.0 排序
+ * 1.1 取子数组的两端数据然后二分查找
+ */
 package com.leetcode.oj;
 
 import java.util.Arrays;

@@ -1,37 +1,41 @@
-/*
-0.Problem:
-0.0
-The n-queens puzzle is the problem of placing n queens on 
-an n×n chessboard such that no two queens attack each other.
-Given an integer n, return all distinct solutions to the 
-n-queens puzzle.
-Each solution contains a distinct board configuration of 
-the n-queens' placement, where 'Q' and '.' both indicate 
-a queen and an empty space respectively.
-For example,
-There exist two distinct solutions to the 4-queens puzzle:
-[
- [".Q..",  // Solution 1
-  "...Q",
-  "Q...",
-  "..Q."],
- ["..Q.",  // Solution 2
-  "Q...",
-  "...Q",
-  ".Q.."]
-]
-
-0.1
-Follow up for N-Queens problem.
-Now, instead outputting board configurations, 
-return the total number of distinct solutions.
-
-1.Refer.:
-1.0
-分支树的深度优先遍历，当能到达叶子节点时记录结果集中
-1.1
-思路和1.0完全相同，区别仅在1.1只记录个数
-*/
+/**
+ * Source : 
+ * Author : Hexiaoqiao
+ * Date   : 2014-09-26
+ *
+ * 0.Problem:
+ * 0.0
+ * The n-queens puzzle is the problem of placing n queens on 
+ * an n×n chessboard such that no two queens attack each other.
+ * Given an integer n, return all distinct solutions to the 
+ * n-queens puzzle.
+ * Each solution contains a distinct board configuration of 
+ * the n-queens' placement, where 'Q' and '.' both indicate 
+ * a queen and an empty space respectively.
+ * For example,
+ * There exist two distinct solutions to the 4-queens puzzle:
+ * [
+ *  [".Q..",  // Solution 1
+ *   "...Q",
+ *   "Q...",
+ *   "..Q."],
+ *  ["..Q.",  // Solution 2
+ *   "Q...",
+ *   "...Q",
+ *   ".Q.."]
+ * ]
+ * 
+ * 0.1
+ * Follow up for N-Queens problem.
+ * Now, instead outputting board configurations, 
+ * return the total number of distinct solutions.
+ * 
+ * 1.Refer.:
+ * 1.0
+ * 分支树的深度优先遍历，当能到达叶子节点时记录结果集中
+ * 1.1
+ * 思路和1.0完全相同，区别仅在1.1只记录个数
+ */
 package com.leetcode.oj;
 
 import java.util.ArrayList;

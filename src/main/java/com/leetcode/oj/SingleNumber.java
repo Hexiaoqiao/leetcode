@@ -1,5 +1,6 @@
 /**
- * Source : 
+ * Source : http://oj.leetcode.com/problems/single-number
+ *			http://oj.leetcode.com/problems/single-number-ii
  * Author : Hexiaoqiao
  * Date   : 2014-09-26
  *

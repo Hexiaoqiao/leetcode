@@ -1,5 +1,5 @@
 /**
- * Source : 
+ * Source : http://oj.leetcode.com/problems/scramble-string
  * Author : Hexiaoqiao
  * Date   : 2014-09-26
  *
@@ -46,7 +46,6 @@
  * 递归
  * S1.substr(0,i)与S2.substr(0,i) 和 S1.substr(i+1,len)与S2.substr(i+1,len)
  * 是否互为scrambled string
- * 
  * 或者
  * S1.substr(0,i)与S2.substr(len-i,len) 和 S1.substr(i+1,len)与S2.substr(0,len-i)
  * 是否互为scrambled string

@@ -1,5 +1,5 @@
 /**
- * Source : 
+ * Source : http://oj.leetcode.com/problems/longest-common-prefix
  * Author : Hexiaoqiao
  * Date   : 2014-09-26
  *

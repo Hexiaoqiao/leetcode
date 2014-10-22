@@ -1,5 +1,6 @@
 /**
- * Source : 
+ * Source : http://oj.leetcode.com/problems/pascals-triangle
+ *			http://oj.leetcode.com/problems/pascals-triangle-ii
  * Author : Hexiaoqiao
  * Date   : 2014-09-26
  *

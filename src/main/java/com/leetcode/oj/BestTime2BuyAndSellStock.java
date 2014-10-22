@@ -1,5 +1,7 @@
 /**
- * Source : 
+ * Source : http://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock
+ *			http://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-ii
+ *			http://oj.leetcode.com/problems/best-time-to-buy-and-sell-stock-iii
  * Author : Hexiaoqiao
  * Date   : 2014-09-26
  *

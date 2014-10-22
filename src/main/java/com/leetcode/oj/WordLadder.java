@@ -1,5 +1,6 @@
 /**
- * Source : 
+ * Source : http://oj.leetcode.com/problems/word-ladder
+ *			http://oj.leetcode.com/problems/word-ladder-ii
  * Author : Hexiaoqiao
  * Date   : 2014-09-26
  *

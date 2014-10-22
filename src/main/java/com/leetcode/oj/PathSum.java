@@ -1,5 +1,6 @@
 /**
- * Source : 
+ * Source : http://oj.leetcode.com/problems/path-sum
+ *			http://oj.leetcode.com/problems/path-sum-ii
  * Author : Hexiaoqiao
  * Date   : 2014-09-26
  *

@@ -1,5 +1,6 @@
 /**
- * Source : 
+ * Source : http://oj.leetcode.com/problems/valid-sudoku
+ * 			http://oj.leetcode.com/problems/sudoku-solver
  * Author : Hexiaoqiao
  * Date   : 2014-09-26
  *

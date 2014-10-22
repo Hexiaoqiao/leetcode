@@ -1,5 +1,6 @@
 /**
- * Source : 
+ * Source : http://oj.leetcode.com/problems/spiral-matrix
+ *			http://oj.leetcode.com/problems/spiral-matrix-ii
  * Author : Hexiaoqiao
  * Date   : 2014-09-26
  *

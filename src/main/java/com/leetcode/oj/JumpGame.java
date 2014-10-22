@@ -1,5 +1,6 @@
 /**
- * Source : 
+ * Source : http://oj.leetcode.com/problems/jump-game
+ *			http://oj.leetcode.com/problems/jump-game-ii
  * Author : Hexiaoqiao
  * Date   : 2014-09-26
  *

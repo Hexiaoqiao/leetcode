@@ -1,5 +1,6 @@
 /**
- * Source : 
+ * Source : http://oj.leetcode.com/problems/word-break
+ *			http://oj.leetcode.com/problems/word-break-ii
  * Author : Hexiaoqiao
  * Date   : 2014-09-26
  *

@@ -1,5 +1,9 @@
 /**
- * Source : 
+ * Source : http://oj.leetcode.com/problems/remove-duplicates-from-sorted-array
+ * 			http://oj.leetcode.com/problems/remove-duplicates-from-sorted-array-ii
+ * 			http://oj.leetcode.com/problems/remove-duplicates-from-sorted-list
+ * 			http://oj.leetcode.com/problems/remove-duplicates-from-sorted-list-ii
+ * 			http://oj.leetcode.com/problems/remove-element
  * Author : Hexiaoqiao
  * Date   : 2014-09-26
  *

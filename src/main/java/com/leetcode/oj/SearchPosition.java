@@ -1,5 +1,6 @@
 /**
- * Source : 
+ * Source : http://oj.leetcode.com/problems/search-insert-position
+ * 			http://oj.leetcode.com/problems/search-for-a-range
  * Author : Hexiaoqiao
  * Date   : 2014-09-26
  *

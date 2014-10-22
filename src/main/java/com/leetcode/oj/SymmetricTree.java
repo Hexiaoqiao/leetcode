@@ -1,5 +1,6 @@
 /**
- * Source : 
+ * Source : http://oj.leetcode.com/problems/symmetric-tree
+ * 			http://oj.leetcode.com/problems/same-tree
  * Author : Hexiaoqiao
  * Date   : 2014-09-26
  *

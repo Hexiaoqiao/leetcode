@@ -1,5 +1,6 @@
 /**
- * Source : 
+ * Source : http://oj.leetcode.com/problems/subsets
+ *			http://oj.leetcode.com/problems/subsets-ii
  * Author : Hexiaoqiao
  * Date   : 2014-09-26
  *

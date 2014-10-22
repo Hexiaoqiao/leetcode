@@ -1,5 +1,5 @@
 /**
- * Source : 
+ * Source : http://oj.leetcode.com/problems/simplify-path
  * Author : Hexiaoqiao
  * Date   : 2014-09-26
  *

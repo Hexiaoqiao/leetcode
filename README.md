@@ -5,6 +5,7 @@ LeetCode Java Solutions
 
 | Title | Solution | Add Date | Difficulty |
 | ----- | -------- | -------- | ---------- |
+|[Intersection of Two Linked Lists](https://oj.leetcode.com/problems/intersection-of-two-linked-lists/)|[Java](./src/main/java/com/leetcode/oj/IntersectionOfTwoLinkedLists)|2014/11/27|Easy|
 |[Min Stack](https://oj.leetcode.com/problems/min-stack/)|[Java](./src/main/java/com/leetcode/oj/MinStack.java)|2014/11/09|Easy|
 |[Find Minimum in Rotated Sorted Array II](https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)|[Java](./src/main/java/com/leetcode/oj/FindMinimuminRotatedSortedArray.java)|2014/10/20|Hard|
 |[Find Minimum in Rotated Sorted Array](https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array/)|[Java](./src/main/java/com/leetcode/oj/FindMinimuminRotatedSortedArray.java)|2014/10/15|Medium|
@@ -160,3 +161,4 @@ LeetCode Java Solutions
 |[Longest Substring Without Repeating Characters](https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/)|[Java](./src/main/java/com/leetcode/oj/LongestSubstring.java)|2011/5/15|Medium|
 |[Median of Two Sorted Arrays](https://oj.leetcode.com/problems/median-of-two-sorted-arrays/)|[Java](./src/main/java/com/leetcode/oj/MedianOfSortedArrays.java)|2011/3/27|Hard|
 |[Two Sum](https://oj.leetcode.com/problems/two-sum/)|[Java](./src/main/java/com/leetcode/oj/TwoSum.java)|2011/3/13|Medium|
+

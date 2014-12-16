@@ -5,6 +5,8 @@ LeetCode Java Solutions
 
 | Title | Solution | Add Date | Difficulty |
 | ----- | -------- | -------- | ---------- |
+|[Compare Version Numbers](https://oj.leetcode.com/problems/compare-version-numbers/)|[Java](./src/main/java/com/leetcode/oj/CompareVersionNumbers.java)|2014/12/15|Easy|
+|[Maximum Gap](https://oj.leetcode.com/problems/maximum-gap/)|[Java](./src/main/java/com/leetcode/oj/MaximumGap.java)|2014/12/13|Hard|
 |[Intersection of Two Linked Lists](https://oj.leetcode.com/problems/intersection-of-two-linked-lists/)|[Java](./src/main/java/com/leetcode/oj/IntersectionOfTwoLinkedLists.java)|2014/11/27|Easy|
 |[Min Stack](https://oj.leetcode.com/problems/min-stack/)|[Java](./src/main/java/com/leetcode/oj/MinStack.java)|2014/11/09|Easy|
 |[Find Minimum in Rotated Sorted Array II](https://oj.leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)|[Java](./src/main/java/com/leetcode/oj/FindMinimuminRotatedSortedArray.java)|2014/10/20|Hard|

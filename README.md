@@ -5,6 +5,7 @@ LeetCode Java Solutions
 
 | Title | Solution | Add Date | Difficulty |
 | ----- | -------- | -------- | ---------- |
+|[Fraction to Recurring Decimal](https://oj.leetcode.com/problems/fraction-to-recurring-decimal/)|[Java](./src/main/java/com/leetcode/oj/FractionToRecurringDecimal.java)|2014/12/16|Medium|
 |[Compare Version Numbers](https://oj.leetcode.com/problems/compare-version-numbers/)|[Java](./src/main/java/com/leetcode/oj/CompareVersionNumbers.java)|2014/12/15|Easy|
 |[Maximum Gap](https://oj.leetcode.com/problems/maximum-gap/)|[Java](./src/main/java/com/leetcode/oj/MaximumGap.java)|2014/12/13|Hard|
 |[Intersection of Two Linked Lists](https://oj.leetcode.com/problems/intersection-of-two-linked-lists/)|[Java](./src/main/java/com/leetcode/oj/IntersectionOfTwoLinkedLists.java)|2014/11/27|Easy|

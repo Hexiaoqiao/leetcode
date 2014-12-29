@@ -5,6 +5,9 @@ LeetCode Java Solutions
 
 | Title | Solution | Add Date | Difficulty |
 | ----- | -------- | -------- | ---------- |
+|[Excel Sheet Column Number](https://oj.leetcode.com/problems/excel-sheet-column-number/)|[Java](./src/main/java/com/leetcode/oj/ExcelSheetColumnTitle.java)|2014/12/24|Easy|
+|[Majority Element](https://oj.leetcode.com/problems/majority-element/)|[Java](./src/main/java/com/leetcode/oj/MajorityElement.java)|2014/12/24|Easy|
+|[Excel Sheet Column Title](https://oj.leetcode.com/problems/excel-sheet-column-title/)|[Java](./src/main/java/com/leetcode/oj/ExcelSheetColumnTitle.java)|2014/12/24|Easy|
 |[Fraction to Recurring Decimal](https://oj.leetcode.com/problems/fraction-to-recurring-decimal/)|[Java](./src/main/java/com/leetcode/oj/FractionToRecurringDecimal.java)|2014/12/16|Medium|
 |[Compare Version Numbers](https://oj.leetcode.com/problems/compare-version-numbers/)|[Java](./src/main/java/com/leetcode/oj/CompareVersionNumbers.java)|2014/12/15|Easy|
 |[Maximum Gap](https://oj.leetcode.com/problems/maximum-gap/)|[Java](./src/main/java/com/leetcode/oj/MaximumGap.java)|2014/12/13|Hard|

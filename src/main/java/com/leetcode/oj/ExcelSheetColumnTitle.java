@@ -20,7 +20,7 @@
 package com.leetcode.oj;
 
 public class ExcelSheetColumnTitle {
-    public static String convertToTitle(int n) {        
+    public static String convertToTitle(int n) {
         if (0 >= n) return null;
         StringBuffer sb = new StringBuffer();
         int t = n;
@@ -33,13 +33,34 @@ public class ExcelSheetColumnTitle {
         }
         return sb.toString();
     }
+    
+    public static int titleToNumber(String s) {
+        int i = 0;
+        while (s.charAt(i) == ' ') i++;
+        long res = 0;
+        int len = s.length();
+        if (i == len) return -1;
+        while (i < len) {
+            char c = s.charAt(i);
+            if (c < 'A' || c > 'Z') return -1;
+            res = res * 26 + c - 'A' + 1;
+            i++;
+        }
+        if (res > Integer.MAX_VALUE) {
+            return -1;
+        }
+        return (int)res;
+    }
     /**
      * @param args
      */
     public static void main(String[] args) {
         // TODO Auto-generated method stub
-        for (int i = 26; i < 25600; i++) {
-            System.out.println(convertToTitle(i));
+        for (int i = 2555555; i < 255555555; i++) {
+            String s = convertToTitle(i);
+            System.out.print(i + " ");
+            System.out.print(s + " ");
+            System.out.println(titleToNumber(s));
         }
     }
 }

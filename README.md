@@ -5,6 +5,8 @@ LeetCode Java Solutions
 
 | Title | Solution | Add Date | Difficulty |
 | ----- | -------- | -------- | ---------- |
+|[Binary Search Tree Iterator](https://oj.leetcode.com/problems/binary-search-tree-iterator/)|[Java](./src/main/java/com/leetcode/oj/BSTIterator.java)|2015/01/06|Medium|
+|[Factorial Trailing Zeroes ](https://oj.leetcode.com/problems/factorial-trailing-zeroes/)|[Java](./src/main/java/com/leetcode/oj/FactorialTrailingZeroes.java)|2015/01/06|Easy|
 |[Excel Sheet Column Number](https://oj.leetcode.com/problems/excel-sheet-column-number/)|[Java](./src/main/java/com/leetcode/oj/ExcelSheetColumnTitle.java)|2014/12/24|Easy|
 |[Majority Element](https://oj.leetcode.com/problems/majority-element/)|[Java](./src/main/java/com/leetcode/oj/MajorityElement.java)|2014/12/24|Easy|
 |[Excel Sheet Column Title](https://oj.leetcode.com/problems/excel-sheet-column-title/)|[Java](./src/main/java/com/leetcode/oj/ExcelSheetColumnTitle.java)|2014/12/24|Easy|

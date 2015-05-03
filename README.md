@@ -5,6 +5,14 @@ LeetCode Java Solutions
 
 | Title | Solution | Add Date | Difficulty |
 | ----- | -------- | -------- | ---------- |
+|[Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/)|[Java](./src/main/java/com/leetcode/oj/IsomorphicStrings.java)|2015/01/01|Easy|
+|[Count Primes](https://leetcode.com/problems/count-primes/)|[Java](./src/main/java/com/leetcode/oj/CountPrimes.java)|2015/01/01|Easy|
+|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)|[Java](./src/main/java/com/leetcode/oj/RemoveLinkedListElements.java)|2015/01/01|Easy|
+|[Happy Number](https://leetcode.com/problems/happy-number/)|[Java](./src/main/java/com/leetcode/oj/HappyNumber.java)|2015/01/01|Easy|
+|[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)|[Java](./src/main/java/com/leetcode/oj/NumberOf1Bits.java)|2015/01/01|Easy|
+|[Reverse Bits](https://leetcode.com/problems/reverse-bits/)|[Java](./src/main/java/com/leetcode/oj/ReverseBits.java)|2015/01/01|Easy|
+|[Rotate Array](https://leetcode.com/problems/rotate-array/)|[Java](./src/main/java/com/leetcode/oj/RotateArray.java)|2015/01/01|Easy|
+|[Largest Number](https://leetcode.com/problems/largest-number/)|[Java](./src/main/java/com/leetcode/oj/LargestNumber.java)|2015/01/01|Easy|
 |[Binary Search Tree Iterator](https://oj.leetcode.com/problems/binary-search-tree-iterator/)|[Java](./src/main/java/com/leetcode/oj/BSTIterator.java)|2015/01/06|Medium|
 |[Factorial Trailing Zeroes ](https://oj.leetcode.com/problems/factorial-trailing-zeroes/)|[Java](./src/main/java/com/leetcode/oj/FactorialTrailingZeroes.java)|2015/01/06|Easy|
 |[Excel Sheet Column Number](https://oj.leetcode.com/problems/excel-sheet-column-number/)|[Java](./src/main/java/com/leetcode/oj/ExcelSheetColumnTitle.java)|2014/12/24|Easy|

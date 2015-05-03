@@ -9,6 +9,9 @@ LeetCode Java Solutions
 |[Count Primes](https://leetcode.com/problems/count-primes/)|[Java](./src/main/java/com/leetcode/oj/CountPrimes.java)|2015/01/01|Easy|
 |[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)|[Java](./src/main/java/com/leetcode/oj/RemoveLinkedListElements.java)|2015/01/01|Easy|
 |[Happy Number](https://leetcode.com/problems/happy-number/)|[Java](./src/main/java/com/leetcode/oj/HappyNumber.java)|2015/01/01|Easy|
+|[Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/)|[Java](./src/main/java/com/leetcode/oj/BitwiseANDofNumbersRange.java)|2015/01/01|Medium|
+|[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[Java](./src/main/java/com/leetcode/oj/NumberofIslands.java)|2015/01/01|Medium|
+|[House Robber](https://leetcode.com/problems/house-robber/)|[Java](./src/main/java/com/leetcode/oj/HouseRobber.java)|2015/01/01|Easy|
 |[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)|[Java](./src/main/java/com/leetcode/oj/NumberOf1Bits.java)|2015/01/01|Easy|
 |[Reverse Bits](https://leetcode.com/problems/reverse-bits/)|[Java](./src/main/java/com/leetcode/oj/ReverseBits.java)|2015/01/01|Easy|
 |[Rotate Array](https://leetcode.com/problems/rotate-array/)|[Java](./src/main/java/com/leetcode/oj/RotateArray.java)|2015/01/01|Easy|
